@@ -35,3 +35,5 @@ Giai đoạn hiện tại chỉ chuẩn bị tài liệu, không cài package ho
 | [frontend-design](.agents/skills/frontend-design/SKILL.md) | Workflow thiết kế và visual QA |
 
 Ưu tiên ko/en/vi; dự kiến zh/th/ne/uz. Mọi thông tin sản phẩm chưa xác minh là placeholder/TBD, không phải báo giá hoặc cam kết dịch vụ.
+
+Cloudflare Workers deployment setup: [vinext build/deploy guide](docs/cloudflare-workers.md).
