@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+﻿# SAmobile
 
-## Getting Started
+SAmobile là đại lý cung cấp dịch vụ di động và Internet gia đình KT tại Hàn Quốc cho khách hàng quốc tế. Website do SAmobile vận hành, không phải KT Corporation.
 
-First, run the development server:
+Mục tiêu: giúp khách hàng hiểu dịch vụ và gửi yêu cầu tư vấn phù hợp. Repository hiện là mẫu Next.js cùng bộ tài liệu chuẩn bị phát triển; chưa triển khai UI sản phẩm.
 
-```bash
+## Stack hiện tại
+
+Next.js 16.3.5 (App Router), React/React DOM 19.2.8, TypeScript ^5 strict, Tailwind CSS ^4, PostCSS, ESLint ^9 và npm. Có `package-lock.json`; mã trong `app/`, tài nguyên trong `public/`, alias `@/*` trỏ về gốc repository.
+
+## Chạy dự án
+
+Từ thư mục `samobile/`, khi dependencies đã có:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Mở http://localhost:3000. Lệnh khác: `npm run lint`, `npm run build`, `npm run start` (sau build). Trên PowerShell chặn `npm.ps1`, dùng `npm.cmd`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Giai đoạn hiện tại chỉ chuẩn bị tài liệu, không cài package hoặc thay đổi UI. Không cần chạy dev/build khi chỉ chỉnh tài liệu.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tài liệu
 
-## Learn More
+| Tệp | Nội dung |
+| --- | --- |
+| [AGENTS.md](AGENTS.md) | Điểm bắt đầu cho AI, giữ hướng dẫn Next.js |
+| [CLAUDE.md](CLAUDE.md) | Tham chiếu hướng dẫn chung |
+| [PROJECT_SPEC.md](docs/PROJECT_SPEC.md) | Mục tiêu, đối tượng, danh mục và ngôn ngữ |
+| [DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) | Định hướng thị giác và tiêu chí thiết kế |
+| [CONTENT_GUIDE.md](docs/CONTENT_GUIDE.md) | Danh tính đại lý, xác minh dữ kiện và dịch thuật |
+| [architecture.md](docs/architecture.md) | Kiến trúc đa ngôn ngữ và ranh giới dữ liệu |
+| [development.md](docs/development.md) | Quy trình và kiểm tra theo phạm vi |
+| [decisions.md](docs/decisions.md) | Quyết định đã chốt và còn mở |
+| [frontend-design](.agents/skills/frontend-design/SKILL.md) | Workflow thiết kế và visual QA |
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ưu tiên ko/en/vi; dự kiến zh/th/ne/uz. Mọi thông tin sản phẩm chưa xác minh là placeholder/TBD, không phải báo giá hoặc cam kết dịch vụ.

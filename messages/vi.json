@@ -1,0 +1,187 @@
+{
+  "metaTitle": "SAmobile | Kết nối cuộc sống tại Hàn Quốc",
+  "metaDescription": "Tìm hiểu dịch vụ di động và Internet gia đình cho người nước ngoài tại Hàn Quốc cùng SAmobile, đại lý cung cấp dịch vụ KT.",
+  "skip": "Đến nội dung chính",
+  "navigation": "Điều hướng chính",
+  "languages": "Chọn ngôn ngữ",
+  "menu": "Danh mục",
+  "agencyShort": "SAmobile · Đại lý cung cấp dịch vụ KT",
+  "consult": "Tư vấn",
+  "nav": [
+    "Di động",
+    "Internet",
+    "Internet + TV",
+    "Khuyến mại",
+    "Hỗ trợ"
+  ],
+  "eyebrow": "DỊCH VỤ KT · ĐẠI LÝ SAMOBILE",
+  "heroTitle": "Di động & Internet.",
+  "heroAccent": "Hiểu rõ, chọn đúng.",
+  "heroDescription": "Dịch vụ di động và Internet gia đình cho người nước ngoài tại Hàn Quốc. Tìm dịch vụ, hiểu lựa chọn và khám phá bước tiếp theo cùng SAmobile.",
+  "heroPrimary": "Khám phá gói cước",
+  "heroSecondary": "Các kênh tư vấn",
+  "heroNote": "Di động · Internet gia đình · Internet + TV · SIM / eSIM",
+  "visualLabel": "NƠI BẠN GỌI LÀ NHÀ",
+  "visualCaption": "Cuộc sống tại Hàn, bắt đầu từ kết nối.",
+  "visualPlaceholder": "Ảnh ý tưởng · Không phải thiết bị KT thực tế",
+  "categoryTitle": "Tìm dịch vụ bạn cần",
+  "categoryIntro": "Khám phá kết nối di động và gia đình",
+  "categories": {
+    "mobile": {
+      "name": "Di động",
+      "description": "Kết nối cho cuộc sống mỗi ngày."
+    },
+    "internet": {
+      "name": "Internet gia đình",
+      "description": "Cho công việc, học tập và tổ ấm."
+    },
+    "tv": {
+      "name": "Internet + TV",
+      "description": "Kết nối và giải trí ngay tại nhà."
+    },
+    "sim": {
+      "name": "SIM / eSIM",
+      "description": "Tìm hiểu kết nối cho điện thoại của bạn."
+    }
+  },
+  "plansEyebrow": "DỊCH VỤ DI ĐỘNG & GIA ĐÌNH",
+  "plansTitle": "Gói di động & Internet",
+  "plansIntro": "So sánh các gói di động và Internet gia đình do SAmobile cung cấp.",
+  "placeholder": "DỮ LIỆU MẪU",
+  "priceLabel": "Giá hàng tháng",
+  "tbd": "TBD",
+  "unverified": "Chưa được xác minh",
+  "detailsLabel": "Dung lượng / tốc độ / kênh",
+  "contractLabel": "Hợp đồng & điều kiện",
+  "planAction": "Nhận tư vấn",
+  "planNotice": "Thông tin gói cước do SAmobile cung cấp. Phí và điều kiện khác: TBD.",
+  "simNote": "Bạn đang tìm SIM hoặc eSIM?",
+  "simDescription": "Thiết bị tương thích, tình trạng cung cấp và yêu cầu đăng ký: TBD.",
+  "promotions": "Khuyến mại & gói kết hợp",
+  "promotionsNote": "Khu vực dành cho ưu đãi đã xác minh. Hiện chưa có khuyến mại được công bố.",
+  "supportEyebrow": "ĐỒNG HÀNH CÙNG CUỘC SỐNG TẠI HÀN",
+  "supportTitle": "Viễn thông Hàn Quốc.\nNgôn ngữ bạn hiểu.",
+  "supportDescription": "SAmobile giúp người nước ngoài hiểu dịch vụ di động, Internet gia đình và các bước đăng ký tại Hàn Quốc. Tìm hiểu thông tin trước, rồi trao đổi nhu cầu khi kênh tư vấn hoạt động.",
+  "supportLanguages": "Khám phá website bằng",
+  "futureLanguages": "Ngôn ngữ website dự kiến: 中文 · ไทย · नेपाली · Oʻzbekcha",
+  "supportNote": "Ngôn ngữ tư vấn và giờ phục vụ đang chờ xác nhận.",
+  "reasons": [
+    {
+      "title": "Hiểu rõ trước khi quyết định",
+      "body": "Tìm hiểu dịch vụ, chi phí và điều kiện trước khi lựa chọn."
+    },
+    {
+      "title": "Kết nối cả khi ra ngoài và ở nhà",
+      "body": "Tham khảo dịch vụ di động, Internet và TV tại cùng một nơi."
+    },
+    {
+      "title": "Biết rõ đơn vị bạn đang liên hệ",
+      "body": "Website do SAmobile, đại lý cung cấp dịch vụ KT, vận hành; không phải KT Corporation."
+    }
+  ],
+  "processEyebrow": "BẮT ĐẦU TẠI ĐÂY",
+  "processTitle": "Các bước đăng ký dịch vụ",
+  "processNote": "Quy trình mang tính minh họa. Giấy tờ, điều kiện, thời gian và thủ tục kích hoạt hoặc lắp đặt: TBD.",
+  "steps": [
+    {
+      "title": "Xác định nhu cầu",
+      "body": "Cân nhắc ngôn ngữ, dịch vụ mong muốn và thói quen sử dụng của bạn."
+    },
+    {
+      "title": "Tìm hiểu lựa chọn",
+      "body": "Khi kênh tư vấn sẵn sàng, trao đổi về giá và yêu cầu đã được xác minh."
+    },
+    {
+      "title": "Xác nhận bước tiếp theo",
+      "body": "Kiểm tra thủ tục đăng ký, kích hoạt hoặc lắp đặt trước khi tiến hành."
+    }
+  ],
+  "ctaEyebrow": "TƯ VẤN CÙNG SAMOBILE",
+  "ctaTitle": "Cùng tìm kết nối phù hợp.",
+  "ctaDescription": "Bạn cần hỏi về gói cước, SIM hay lắp đặt Internet? Xem các cách liên hệ với SAmobile để được tư vấn.",
+  "ctaAction": "Xem tình trạng kênh tư vấn",
+  "availabilityTitle": "Kênh tư vấn chưa hoạt động",
+  "availabilityBody": "Kênh liên hệ, giờ phục vụ và ngôn ngữ tư vấn: TBD. Bản mẫu không thu thập thông tin hoặc gửi yêu cầu.",
+  "prepare": "Để chuẩn bị cho tư vấn sau này, hãy cân nhắc ngôn ngữ, dịch vụ cần dùng và các câu hỏi của bạn.",
+  "back": "Xem lại dịch vụ",
+  "footerTagline": "Kết nối cuộc sống tại Hàn Quốc.",
+  "footerAgency": "SAmobile là đại lý cung cấp dịch vụ di động và Internet gia đình KT tại Hàn Quốc. Website do SAmobile vận hành, không phải KT Corporation.",
+  "footerServices": "Khám phá dịch vụ",
+  "footerInfo": "Thông tin doanh nghiệp",
+  "footerBusiness": "Thông tin doanh nghiệp & liên hệ: TBD",
+  "footerLegal": "Quyền riêng tư & thông tin pháp lý: TBD",
+  "footerCopyright": "SAmobile · Bản mẫu trang chủ",
+  "footerNote": "Thông tin sản phẩm do SAmobile cung cấp. Các chi tiết khác: TBD.",
+  "visualAlt": "Ảnh ý tưởng tạm về điện thoại, TV, bộ phát Wi-Fi và SIM không mang thương hiệu.",
+  "planPreview": "Gói cước mẫu",
+  "compareHint": "Cuộn ngang để so sánh dịch vụ",
+  "planFeatures": {
+    "data": "Dữ liệu di động",
+    "speed": "Tốc độ Internet",
+    "channels": "Kênh truyền hình",
+    "format": "Tình trạng SIM / eSIM",
+    "calls": "Cuộc gọi & tin nhắn",
+    "equipment": "Thiết bị & lắp đặt",
+    "benefits": "Quyền lợi đi kèm",
+    "eligibility": "Tương thích & điều kiện",
+    "contract": "Thời hạn hợp đồng"
+  },
+  "promotionTitles": {
+    "mobile": "Thêm lựa chọn di động.",
+    "internet": "Kết nối cho tổ ấm.",
+    "bundle": "Di động. Internet. TV."
+  },
+  "promotionDescriptions": {
+    "mobile": "Nội dung ưu đãi di động: TBD.",
+    "internet": "Nội dung ưu đãi Internet: TBD.",
+    "bundle": "Quyền lợi và điều kiện kết hợp: TBD."
+  },
+  "promotionAction": "Xem các kênh tư vấn",
+  "supportLink": "Chọn ngôn ngữ website",
+  "channelUnavailable": "Chưa kết nối",
+  "channelStatus": "Đang chuẩn bị kênh tư vấn · Liên hệ và giờ phục vụ: TBD",
+  "channelNames": {
+    "kakao": "KakaoTalk",
+    "phone": "Tư vấn qua điện thoại",
+    "form": "Biểu mẫu tư vấn",
+    "message": "Nhắn tin"
+  },
+  "channelDescriptions": {
+    "kakao": "Trò chuyện cùng tư vấn viên",
+    "phone": "Trao đổi lựa chọn dịch vụ",
+    "form": "Để lại nhu cầu dịch vụ",
+    "message": "Hỏi bằng ngôn ngữ bạn muốn"
+  },
+  "supportLinks": [
+    "Hướng dẫn dịch vụ",
+    "Quy trình đăng ký",
+    "Tình trạng kênh tư vấn"
+  ],
+  "storeLabel": "Dịch vụ di động & gia đình",
+  "allServices": "Tất cả dịch vụ",
+  "languageDialog": {
+    "welcome": "CHÀO MỪNG ĐẾN SAMOBILE",
+    "title": "Chọn ngôn ngữ của bạn",
+    "description": "한국어 · English · Tiếng Việt\nKhám phá dịch vụ bằng ngôn ngữ quen thuộc.",
+    "close": "Đóng hộp chọn ngôn ngữ",
+    "soon": "Sắp ra mắt",
+    "note": "Lựa chọn được lưu trên thiết bị này. Bạn có thể đổi ngôn ngữ ở đầu trang bất cứ lúc nào.",
+    "required": "Vui lòng chọn ngôn ngữ để tiếp tục."
+  },
+  "product": {
+    "plan": "Gói",
+    "perMonth": "/ tháng",
+    "perDay": "/ngày",
+    "highSpeedData": "Dữ liệu tốc độ cao",
+    "afterAllowance": "Sau khi hết dung lượng",
+    "unlimitedUpTo": "Không giới hạn, tối đa {speed} Mbps",
+    "calls": "Cuộc gọi",
+    "sms": "SMS",
+    "unlimited": "Không giới hạn",
+    "minutes": "phút",
+    "messages": "tin nhắn",
+    "contract": "Hợp đồng",
+    "years": "năm"
+  },
+  "brandPlaceholder": "Tên thương hiệu tạm thời"
+}
