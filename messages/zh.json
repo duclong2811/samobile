@@ -1,0 +1,171 @@
+{
+  "metaTitle": "SAmobile | 连接韩国生活",
+  "metaDescription": "通过 SAmobile 了解面向在韩外籍居民的移动通信和家庭宽带服务。SAmobile 是提供 KT 服务的销售代理。",
+  "skip": "跳至正文",
+  "navigation": "主导航",
+  "languages": "选择语言",
+  "menu": "菜单",
+  "agencyShort": "SAmobile · KT 服务销售代理",
+  "consult": "咨询",
+  "nav": [
+    "手机套餐",
+    "宽带安装",
+    "优惠信息",
+    "帮助"
+  ],
+  "eyebrow": "KT 服务 · SAmobile 销售代理",
+  "heroTitle": "手机与宽带，",
+  "heroAccent": "了解清楚再选择。",
+  "heroDescription": "为在韩国生活的外籍居民介绍移动通信和家庭宽带服务。了解服务与选择，与 SAmobile 一起确认下一步。",
+  "heroPrimary": "查看套餐",
+  "heroSecondary": "咨询渠道",
+  "heroNote": "手机套餐 · 家庭宽带安装",
+  "visualLabel": "安心生活的地方",
+  "visualCaption": "连接韩国生活，从这里开始。",
+  "visualPlaceholder": "概念图片 · 非实际 KT 设备",
+  "categoryTitle": "查找所需服务",
+  "categoryIntro": "了解手机与家庭网络",
+  "categories": {
+    "mobile": {
+      "name": "手机套餐",
+      "description": "连接日常生活。"
+    },
+    "internet": {
+      "name": "宽带安装",
+      "description": "满足居家办公、学习和生活需要。"
+    }
+  },
+  "plansEyebrow": "手机与家庭网络",
+  "plansTitle": "手机与宽带套餐",
+  "plansIntro": "比较 SAmobile 提供的手机及家庭宽带套餐。",
+  "placeholder": "待确认信息",
+  "priceLabel": "月费",
+  "tbd": "待确认",
+  "unverified": "尚未核实",
+  "detailsLabel": "流量 / 网速",
+  "contractLabel": "合约与条件",
+  "planAction": "咨询套餐",
+  "planNotice": "套餐信息由 SAmobile 提供。其他费用及条件待确认。",
+  "simNote": "需要 SIM 或 eSIM？",
+  "simDescription": "设备兼容性、可用性及申请要求待确认。",
+  "promotions": "优惠信息",
+  "promotionsNote": "此处用于发布已核实的优惠。目前尚无可提供的优惠。",
+  "supportEyebrow": "陪伴您在韩国的生活",
+  "supportTitle": "韩国通信服务，\n用您熟悉的语言了解。",
+  "supportDescription": "SAmobile 帮助外籍居民了解手机、家庭网络服务及申请步骤。先了解信息，待咨询渠道开放后再沟通您的需求。",
+  "supportLanguages": "网站支持的语言",
+  "supportNote": "咨询服务支持的语言及营业时间尚待确认。",
+  "reasons": [
+    {
+      "title": "先了解，再决定",
+      "body": "决定前，请确认服务内容、费用及条件。"
+    },
+    {
+      "title": "手机与家庭网络，一起了解",
+      "body": "在这里了解手机套餐与家庭宽带安装服务。"
+    },
+    {
+      "title": "清楚了解服务提供方",
+      "body": "本网站由提供 KT 服务的销售代理 SAmobile 运营，并非由 KT Corporation 运营。"
+    }
+  ],
+  "processEyebrow": "开始办理",
+  "processTitle": "逐步了解办理流程",
+  "processNote": "以下为参考流程。所需文件、申请资格、时间及开通或安装步骤待确认。",
+  "steps": [
+    {
+      "title": "明确您的需求",
+      "body": "考虑您偏好的语言、所需服务和日常使用习惯。"
+    },
+    {
+      "title": "了解可选方案",
+      "body": "咨询渠道开放后，与顾问确认已核实的价格及申请要求。"
+    },
+    {
+      "title": "确认后续步骤",
+      "body": "办理前，请确认申请、开通或安装流程。"
+    }
+  ],
+  "ctaEyebrow": "SAmobile 咨询",
+  "ctaTitle": "一起找到适合您的连接。",
+  "ctaDescription": "对套餐、SIM 卡或家庭宽带安装有疑问？了解与 SAmobile 沟通的方式。",
+  "ctaAction": "查看咨询服务状态",
+  "availabilityTitle": "咨询服务暂未开放",
+  "availabilityBody": "联系方式、营业时间及咨询语言待确认。本演示网站不收集信息，也不会发送申请。",
+  "prepare": "为后续咨询做好准备：考虑您的语言偏好、所需服务和问题。",
+  "back": "返回服务",
+  "footerTagline": "连接韩国生活。",
+  "footerAgency": "SAmobile 是在韩国提供 KT 手机和家庭宽带服务的销售代理。本网站由 SAmobile 运营，并非 KT Corporation。",
+  "footerServices": "了解服务",
+  "footerInfo": "商家信息",
+  "footerBusiness": "商家及联系方式：待确认",
+  "footerLegal": "隐私及法律信息：待确认",
+  "footerCopyright": "SAmobile · 首页演示",
+  "footerNote": "产品信息由 SAmobile 提供。其他详情待确认。",
+  "visualAlt": "无品牌手机、Wi-Fi 路由器和 SIM 卡的概念图片。",
+  "planPreview": "套餐预览",
+  "compareHint": "比较服务",
+  "planFeatures": {
+    "data": "手机流量",
+    "speed": "宽带网速",
+    "format": "SIM / eSIM 可用性",
+    "calls": "通话与短信",
+    "equipment": "设备与安装",
+    "benefits": "包含的权益",
+    "eligibility": "兼容性与申请资格",
+    "contract": "合约期限"
+  },
+  "promotionTitles": {
+    "mobile": "了解手机服务。",
+    "internet": "连接您的家。"
+  },
+  "promotionDescriptions": {
+    "mobile": "手机套餐优惠详情待确认。",
+    "internet": "家庭宽带优惠详情待确认。"
+  },
+  "promotionAction": "查看咨询渠道",
+  "supportLink": "选择网站语言",
+  "channelUnavailable": "尚未开通",
+  "channelStatus": "咨询渠道筹备中 · 联系方式及营业时间待确认",
+  "channelNames": {
+    "kakao": "KakaoTalk",
+    "phone": "电话咨询",
+    "form": "咨询表单",
+    "message": "在线消息"
+  },
+  "channelDescriptions": {
+    "kakao": "与顾问聊天",
+    "phone": "沟通您的选择",
+    "form": "留下服务咨询",
+    "message": "用您偏好的语言提问"
+  },
+  "supportLinks": [
+    "服务指南",
+    "申请流程",
+    "咨询服务状态"
+  ],
+  "allServices": "全部服务",
+  "languageDialog": {
+    "welcome": "欢迎来到 SAmobile",
+    "title": "选择您的语言",
+    "description": "用熟悉的语言了解服务。",
+    "close": "关闭语言选择",
+    "note": "您的选择将保存在此设备上。您可随时在页面顶部更改。",
+    "required": "请选择一种语言以继续。"
+  },
+  "product": {
+    "plan": "套餐",
+    "perMonth": "/ 月",
+    "perDay": "/天",
+    "highSpeedData": "高速流量",
+    "afterAllowance": "高速流量用尽后",
+    "unlimitedUpTo": "不限量，最高 {speed} Mbps",
+    "calls": "通话",
+    "sms": "短信",
+    "unlimited": "不限量",
+    "minutes": "分钟",
+    "messages": "条",
+    "contract": "合约",
+    "years": "年"
+  }
+}

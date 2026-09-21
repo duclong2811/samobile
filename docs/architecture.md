@@ -2,6 +2,8 @@
 
 ## Hiện trạng
 
+Cập nhật triển khai: App Router dùng một homepage chung với bảy bộ thông điệp ko/en/vi/zh/th/ne/uz trong `messages/`. `lib/i18n/config.ts` là nguồn locale; `messages.ts` kiểm tra cấu trúc thông điệp qua TypeScript. `/` chuyển tới `/en`, lựa chọn lưu trong localStorage được tôn trọng. Các phần “chưa triển khai” bên dưới là đề xuất lịch sử; xem `product-update.md` và `brand-assets.md` cho trạng thái hiện tại.
+
 Next.js 16.3.5 App Router, React 19.2.8, TypeScript strict, Tailwind CSS 4, ESLint 9, npm. `app/` chứa layout/trang/CSS mẫu; `public/` chứa tài nguyên. Alias `@/*` trỏ về gốc repository. Chưa có i18n, kho dữ liệu sản phẩm, backend riêng, CMS hoặc bộ kiểm thử.
 
 ## Cấu trúc đề xuất, chưa triển khai
@@ -20,7 +22,7 @@ Tên file, JSON/TypeScript và thư viện i18n: TBD. Có thể bắt đầu v�
 
 ## Locale và routing
 
-- Tiền tố `/ko`, `/en`, `/vi`, sau này `/zh`, `/th`, `/ne`, `/uz`.
+- Tiền tố đang hỗ trợ: `/ko`, `/en`, `/vi`, `/zh`, `/th`, `/ne`, `/uz`.
 - Dùng `[locale]` thay vì sao chép component cho mỗi ngôn ngữ.
 - Slug chung: `/{locale}/mobile`, `/{locale}/internet`; slug các khu vực khác TBD.
 - Cấu hình trung tâm phân biệt locale dự kiến và đã xuất bản. Thêm ngôn ngữ bằng cấu hình, bản dịch và QA, không thiết kế lại trang.

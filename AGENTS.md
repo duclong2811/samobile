@@ -12,8 +12,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 - Communicate with the project owner in Vietnamese.
 - SAmobile is a sales agency providing KT services, not KT Corporation. Preserve its own identity.
+- Brand names are invariant in every locale: use exactly `KT` and `SAmobile` in text. Never translate, transliterate, respell, abbreviate, change capitalization, or apply CSS text-transform to these names. Only translate surrounding descriptions. Preserve the authorized KT image unchanged.
 - Read [scope](docs/PROJECT_SPEC.md), [architecture](docs/architecture.md), and [workflow](docs/development.md) before relevant work. For UI/copy, also read [design](docs/DESIGN_SYSTEM.md) and [content](docs/CONTENT_GUIDE.md).
 - For frontend design, use [.agents/skills/frontend-design/SKILL.md](.agents/skills/frontend-design/SKILL.md).
 - Keep product facts and translations separate from components. Mark unverified information placeholder/TBD; never invent commercial or legal claims.
-- Current phase: documentation only. Wait for owner approval before UI implementation, package installation, or application configuration changes.
+- Current authorized scope: refine the existing homepage, branding, seven locales and responsive behavior. Preserve supplied commercial data and Cloudflare/vinext configuration. Do not add pages, integrations, authenticate or deploy without a new request.
 - Inspect existing changes, limit edits to the task, run appropriate checks, and report results and open decisions. Keep detailed rules in `docs/` and preserve the Next.js-managed block above.

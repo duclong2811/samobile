@@ -8,40 +8,31 @@
   "agencyShort": "SAmobile · Sales agency providing KT services",
   "consult": "Consultation",
   "nav": [
-    "Mobile",
-    "Internet",
-    "Internet + TV",
+    "Mobile plans",
+    "Internet installation",
     "Promotions",
     "Support"
   ],
-  "eyebrow": "KT SERVICES Â· SAMOBILE SALES AGENCY",
+  "eyebrow": "KT SERVICES · SAmobile SALES AGENCY",
   "heroTitle": "Mobile & Internet.",
   "heroAccent": "Made clear for you.",
   "heroDescription": "Mobile and home internet services for foreigners living in Korea. Find your service. Understand your options. Take the next step with SAmobile.",
   "heroPrimary": "Explore plans",
   "heroSecondary": "Consultation options",
-  "heroNote": "Mobile Â· Home Internet Â· Internet + TV Â· SIM / eSIM",
+  "heroNote": "Mobile plans · Internet installation",
   "visualLabel": "A PLACE TO CALL HOME",
   "visualCaption": "Life in Korea, one connection at a time.",
-  "visualPlaceholder": "Concept image Â· Not actual KT equipment",
+  "visualPlaceholder": "Concept image · Not actual KT equipment",
   "categoryTitle": "Find your service",
   "categoryIntro": "Explore mobile and home connections",
   "categories": {
     "mobile": {
-      "name": "Mobile",
+      "name": "Mobile plans",
       "description": "A connection for your everyday life."
     },
     "internet": {
-      "name": "Home Internet",
+      "name": "Internet installation",
       "description": "Make room for work, study and home."
-    },
-    "tv": {
-      "name": "Internet + TV",
-      "description": "Bring your home entertainment together."
-    },
-    "sim": {
-      "name": "SIM / eSIM",
-      "description": "Explore a new connection for your phone."
     }
   },
   "plansEyebrow": "MOBILE & HOME CONNECTIONS",
@@ -51,19 +42,18 @@
   "priceLabel": "Monthly price",
   "tbd": "TBD",
   "unverified": "Not yet verified",
-  "detailsLabel": "Data / speed / channels",
+  "detailsLabel": "Data / speed",
   "contractLabel": "Contract & conditions",
   "planAction": "Get consultation",
   "planNotice": "Plan information supplied by SAmobile. Other fees and conditions: TBD.",
   "simNote": "Looking for SIM or eSIM?",
   "simDescription": "Device compatibility, availability and application requirements: TBD.",
-  "promotions": "Promotions & bundles",
+  "promotions": "Promotions",
   "promotionsNote": "A space for verified offers. No promotions are currently available.",
   "supportEyebrow": "FOR YOUR LIFE IN KOREA",
   "supportTitle": "Korean telecom.\nA language you understand.",
   "supportDescription": "SAmobile helps international residents understand mobile and home services and the steps involved in applying. Start with clear information, then discuss your needs when consultation opens.",
   "supportLanguages": "Explore this website in",
-  "futureLanguages": "Planned website languages: ä¸­æ–‡ Â· à¹„à¸—à¸¢ Â· à¤¨à¥‡à¤ªà¤¾à¤²à¥€ Â· OÊ»zbekcha",
   "supportNote": "Consultation languages and service hours are still to be confirmed.",
   "reasons": [
     {
@@ -72,7 +62,7 @@
     },
     {
       "title": "Mobile and home, together",
-      "body": "Explore mobile, internet and TV in one place."
+      "body": "Explore mobile plans and home Internet installation in one place."
     },
     {
       "title": "Know who you are speaking to",
@@ -96,8 +86,8 @@
       "body": "Check the application and activation or installation process before proceeding."
     }
   ],
-  "ctaEyebrow": "SAMOBILE CONSULTATION",
-  "ctaTitle": "Letâ€™s find your connection.",
+  "ctaEyebrow": "SAmobile CONSULTATION",
+  "ctaTitle": "Let’s find your connection.",
   "ctaDescription": "Questions about plans, SIM cards or home installation? Choose the way you would like to speak with SAmobile.",
   "ctaAction": "View consultation availability",
   "availabilityTitle": "Consultation is not available yet",
@@ -110,15 +100,14 @@
   "footerInfo": "Business information",
   "footerBusiness": "Business details & contact: TBD",
   "footerLegal": "Privacy & legal information: TBD",
-  "footerCopyright": "SAmobile Â· Homepage prototype",
+  "footerCopyright": "SAmobile · Homepage prototype",
   "footerNote": "SAmobile-provided product information. Other details: TBD.",
-  "visualAlt": "Temporary studio concept of an unbranded phone, television, router and SIM card.",
+  "visualAlt": "Concept image of an unbranded phone, Wi-Fi router and SIM card.",
   "planPreview": "Plan preview",
   "compareHint": "Scroll to compare services",
   "planFeatures": {
     "data": "Mobile data",
     "speed": "Internet speed",
-    "channels": "TV channels",
     "format": "SIM / eSIM availability",
     "calls": "Calls & texts",
     "equipment": "Equipment & installation",
@@ -128,18 +117,16 @@
   },
   "promotionTitles": {
     "mobile": "More from your mobile.",
-    "internet": "Your home, connected.",
-    "bundle": "Mobile. Internet. TV."
+    "internet": "Your home, connected."
   },
   "promotionDescriptions": {
     "mobile": "Mobile promotion details: TBD.",
-    "internet": "Home internet promotion details: TBD.",
-    "bundle": "Bundle benefits and conditions: TBD."
+    "internet": "Home internet promotion details: TBD."
   },
   "promotionAction": "View consultation options",
   "supportLink": "Choose website language",
   "channelUnavailable": "Not connected yet",
-  "channelStatus": "Channels in preparation Â· Contact details and hours: TBD",
+  "channelStatus": "Channels in preparation · Contact details and hours: TBD",
   "channelNames": {
     "kakao": "KakaoTalk",
     "phone": "Phone consultation",
@@ -157,14 +144,12 @@
     "Application process",
     "Consultation availability"
   ],
-  "storeLabel": "Mobile & Home Services",
   "allServices": "All services",
   "languageDialog": {
-    "welcome": "WELCOME TO SAMOBILE",
+    "welcome": "WELCOME TO SAmobile",
     "title": "Choose your language",
-    "description": "í•œêµ­ì–´ Â· English Â· Tiáº¿ng Viá»‡t\nMake yourself at home. Explore services in your language.",
+    "description": "Make yourself at home. Explore services in your language.",
     "close": "Close language selector",
-    "soon": "Coming soon",
     "note": "Your choice will be remembered on this device. You can change it in the header anytime.",
     "required": "Please choose a language to continue."
   },
@@ -182,6 +167,5 @@
     "messages": "messages",
     "contract": "Contract",
     "years": "years"
-  },
-  "brandPlaceholder": "Temporary brand text"
+  }
 }

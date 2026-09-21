@@ -8,19 +8,18 @@
   "agencyShort": "SAmobile · KT 서비스 판매 대리점",
   "consult": "가입 상담",
   "nav": [
-    "모바일",
-    "인터넷",
-    "인터넷 + TV",
+    "모바일 요금제",
+    "인터넷 설치",
     "프로모션",
     "고객지원"
   ],
-  "eyebrow": "KT 서비스 · SAMOBILE 판매 대리점",
+  "eyebrow": "KT 서비스 · SAmobile 판매 대리점",
   "heroTitle": "모바일부터 인터넷까지,",
   "heroAccent": "이해하기 쉽게.",
   "heroDescription": "한국에 거주하는 외국인을 위한 모바일·홈 인터넷 서비스. 필요한 서비스를 찾고, 조건을 이해하고, SAmobile과 다음 단계를 알아보세요.",
   "heroPrimary": "요금제 살펴보기",
   "heroSecondary": "상담 채널 안내",
-  "heroNote": "모바일 · 홈 인터넷 · 인터넷 + TV · SIM / eSIM",
+  "heroNote": "모바일 요금제 · 인터넷 설치",
   "visualLabel": "나의 일상이 시작되는 곳",
   "visualCaption": "하나의 연결로 시작하는 한국 생활.",
   "visualPlaceholder": "콘셉트 이미지 · 실제 KT 장비가 아닙니다",
@@ -28,20 +27,12 @@
   "categoryIntro": "모바일과 홈 서비스를 살펴보세요",
   "categories": {
     "mobile": {
-      "name": "모바일",
+      "name": "모바일 요금제",
       "description": "매일의 일상을 위한 모바일 연결."
     },
     "internet": {
-      "name": "홈 인터넷",
+      "name": "인터넷 설치",
       "description": "업무와 공부, 집에서의 시간을 위해."
-    },
-    "tv": {
-      "name": "인터넷 + TV",
-      "description": "집에서 즐기는 인터넷과 TV."
-    },
-    "sim": {
-      "name": "SIM / eSIM",
-      "description": "내 휴대폰에 맞는 연결 알아보기."
     }
   },
   "plansEyebrow": "모바일 & 홈 서비스",
@@ -51,19 +42,18 @@
   "priceLabel": "월 요금",
   "tbd": "TBD",
   "unverified": "아직 확인되지 않음",
-  "detailsLabel": "데이터 / 속도 / 채널",
+  "detailsLabel": "데이터 / 속도",
   "contractLabel": "약정 및 이용 조건",
   "planAction": "상담하기",
   "planNotice": "요금제 정보는 SAmobile이 제공했습니다. 기타 비용 및 조건: 미정.",
   "simNote": "SIM 또는 eSIM을 찾으시나요?",
   "simDescription": "기기 호환성, 제공 여부 및 신청 요건: TBD(미정).",
-  "promotions": "프로모션 & 결합 혜택",
+  "promotions": "프로모션",
   "promotionsNote": "확인된 혜택을 안내할 공간입니다. 현재 제공 중인 프로모션은 없습니다.",
   "supportEyebrow": "한국 생활을 위한 통신 안내",
   "supportTitle": "한국의 통신 서비스,\n익숙한 언어로 알아보세요.",
   "supportDescription": "SAmobile은 한국에 거주하는 외국인이 모바일·홈 서비스를 이해하고 신청 절차를 알아볼 수 있도록 돕습니다. 정보를 먼저 살펴보고, 상담이 시작되면 필요한 서비스를 문의하세요.",
   "supportLanguages": "웹사이트 제공 언어",
-  "futureLanguages": "추가 예정 언어: 中文 · ไทย · नेपाली · Oʻzbekcha",
   "supportNote": "상담 가능 언어와 운영 시간은 아직 미정입니다.",
   "reasons": [
     {
@@ -72,7 +62,7 @@
     },
     {
       "title": "모바일과 집의 연결을 함께",
-      "body": "모바일, 인터넷, TV 서비스를 한곳에서 알아보세요."
+      "body": "모바일 요금제와 가정용 인터넷 설치 서비스를 한곳에서 알아보세요."
     },
     {
       "title": "운영 주체를 분명하게",
@@ -96,7 +86,7 @@
       "body": "진행 전 신청, 개통 또는 설치 절차를 확인하세요."
     }
   ],
-  "ctaEyebrow": "SAMOBILE 상담 안내",
+  "ctaEyebrow": "SAmobile 상담 안내",
   "ctaTitle": "나에게 맞는 연결을 찾아보세요.",
   "ctaDescription": "요금제, SIM 카드, 인터넷 설치가 궁금하신가요? SAmobile과 소통할 상담 방법을 확인해 보세요.",
   "ctaAction": "상담 가능 여부 확인",
@@ -112,13 +102,12 @@
   "footerLegal": "개인정보 처리 및 법적 안내: TBD(미정)",
   "footerCopyright": "SAmobile · 홈페이지 프로토타입",
   "footerNote": "SAmobile 제공 상품 정보입니다. 기타 세부 사항: 미정.",
-  "visualAlt": "휴대폰, TV, 공유기, SIM 카드를 배치한 임시 제품 콘셉트 이미지.",
+  "visualAlt": "휴대폰, Wi-Fi 공유기, SIM 카드를 배치한 콘셉트 이미지.",
   "planPreview": "요금제 미리보기",
   "compareHint": "가로로 스크롤해 서비스를 비교하세요",
   "planFeatures": {
     "data": "모바일 데이터",
     "speed": "인터넷 속도",
-    "channels": "TV 채널",
     "format": "SIM / eSIM 제공 여부",
     "calls": "통화 및 문자",
     "equipment": "장비 및 설치",
@@ -128,13 +117,11 @@
   },
   "promotionTitles": {
     "mobile": "모바일을 더 알차게.",
-    "internet": "우리 집 인터넷 연결.",
-    "bundle": "모바일. 인터넷. TV."
+    "internet": "우리 집 인터넷 연결."
   },
   "promotionDescriptions": {
     "mobile": "모바일 프로모션 내용: TBD(미정).",
-    "internet": "홈 인터넷 프로모션 내용: TBD(미정).",
-    "bundle": "결합 혜택 및 조건: TBD(미정)."
+    "internet": "홈 인터넷 프로모션 내용: TBD(미정)."
   },
   "promotionAction": "상담 채널 안내",
   "supportLink": "웹사이트 언어 선택",
@@ -157,14 +144,12 @@
     "가입 절차",
     "상담 가능 여부"
   ],
-  "storeLabel": "모바일 & 홈 서비스",
   "allServices": "전체 서비스",
   "languageDialog": {
-    "welcome": "SAMOBILE에 오신 것을 환영합니다",
+    "welcome": "SAmobile에 오신 것을 환영합니다",
     "title": "언어를 선택해 주세요",
-    "description": "한국어 · English · Tiếng Việt\n익숙한 언어로 서비스를 알아보세요.",
+    "description": "익숙한 언어로 서비스를 알아보세요.",
     "close": "언어 선택 닫기",
-    "soon": "준비 중",
     "note": "선택한 언어는 이 기기에 저장됩니다. 상단 메뉴에서 언제든 변경할 수 있습니다.",
     "required": "계속하려면 언어를 선택해 주세요."
   },
@@ -182,6 +167,5 @@
     "messages": "건",
     "contract": "약정",
     "years": "년"
-  },
-  "brandPlaceholder": "임시 브랜드 텍스트"
+  }
 }

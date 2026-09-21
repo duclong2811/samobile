@@ -76,19 +76,19 @@ export function LanguageSelector({ locale, copy }: { locale: Locale; copy: Messa
       }}
       onCancel={(event) => { if (!readPreference()) { event.preventDefault(); title.current?.focus(); } else { document.body.style.setProperty("overflow", previousOverflow.current); trigger.current?.focus(); } }}
       onClose={() => { document.body.style.setProperty("overflow", previousOverflow.current); trigger.current?.focus(); }}>
-      <div className="dialog-brand">SA<span>mobile</span><i /></div>
+      <div className="dialog-brand" translate="no">SA<span>mobile</span><i /></div>
       <button ref={closeButton} className="dialog-close" type="button" aria-label={copy.close} onClick={() => { if (readPreference()) dialog.current?.close(); }}>×</button>
       <div className="dialog-globe"><Globe /></div>
       <p className="dialog-welcome">{copy.welcome}</p>
       <h2 id="language-title" tabIndex={-1} ref={title}>{copy.title}</h2>
       <p id="language-description">{copy.description}</p>
       <div className="language-options">
-        {languageOptions.map((option) => <button key={option.code} type="button" lang={option.code} disabled={!option.available}
-          aria-label={`${option.name}${!option.available ? ` — ${copy.soon}` : ""}`}
+        {languageOptions.map((option) => <button key={option.code} type="button" lang={option.code}
+          aria-label={option.name}
           className={option.code === locale ? "language-option is-current" : "language-option"}
           onClick={() => selectLanguage(option.code)}>
-          <span><strong>{option.name}</strong><small lang="en">{option.description}</small></span>
-          {option.available ? <span aria-hidden="true" className="language-option-arrow">↗</span> : <small lang={locale}>{copy.soon}</small>}
+          <strong>{option.name}</strong>
+          <span aria-hidden="true" className="language-option-arrow">↗</span>
         </button>)}
       </div>
       <p className="dialog-note">{copy.required} {copy.note}</p>

@@ -2,7 +2,7 @@
 
 SAmobile là đại lý cung cấp dịch vụ di động và Internet gia đình KT tại Hàn Quốc cho khách hàng quốc tế. Website do SAmobile vận hành, không phải KT Corporation.
 
-Mục tiêu: giúp khách hàng hiểu dịch vụ và gửi yêu cầu tư vấn phù hợp. Repository hiện là mẫu Next.js cùng bộ tài liệu chuẩn bị phát triển; chưa triển khai UI sản phẩm.
+Mục tiêu: giúp khách hàng hiểu dịch vụ và tìm thông tin tư vấn phù hợp. Homepage hiện có hai dịch vụ: gói di động và lắp đặt Internet gia đình, với bảy ngôn ngữ và giao diện responsive. Các kênh liên hệ chưa được xác minh vẫn được đánh dấu chờ cập nhật.
 
 ## Stack hiện tại
 
@@ -18,7 +18,7 @@ npm run dev
 
 Mở http://localhost:3000. Lệnh khác: `npm run lint`, `npm run build`, `npm run start` (sau build). Trên PowerShell chặn `npm.ps1`, dùng `npm.cmd`.
 
-Giai đoạn hiện tại chỉ chuẩn bị tài liệu, không cài package hoặc thay đổi UI. Không cần chạy dev/build khi chỉ chỉnh tài liệu.
+Kiểm tra thay đổi giao diện bằng lint, build Next.js, build vinext và kiểm tra trình duyệt. Chạy hai build tuần tự vì cùng sinh route types trong `.next/`.
 
 ## Tài liệu
 
@@ -34,6 +34,6 @@ Giai đoạn hiện tại chỉ chuẩn bị tài liệu, không cài package ho
 | [decisions.md](docs/decisions.md) | Quyết định đã chốt và còn mở |
 | [frontend-design](.agents/skills/frontend-design/SKILL.md) | Workflow thiết kế và visual QA |
 
-Ưu tiên ko/en/vi; dự kiến zh/th/ne/uz. Mọi thông tin sản phẩm chưa xác minh là placeholder/TBD, không phải báo giá hoặc cam kết dịch vụ.
+Đã hỗ trợ ko/en/vi/zh/th/ne/uz. Tên thương hiệu luôn giữ nguyên chính xác `KT` và `SAmobile` trong mọi ngôn ngữ. Dữ liệu gói cước do chủ dự án cung cấp được giữ riêng trong `content/`; thông tin chưa xác minh vẫn là placeholder/TBD.
 
 Cloudflare Workers deployment setup: [vinext build/deploy guide](docs/cloudflare-workers.md).

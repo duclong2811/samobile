@@ -1,4 +1,4 @@
-export type ProductCategory = "mobile" | "internet" | "tv" | "sim";
+export type ProductCategory = "mobile" | "internet";
 type ProductBase = {
   id: string;
   monthlyPrice: number;

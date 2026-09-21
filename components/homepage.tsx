@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { Locale } from "@/lib/i18n/config";
+import { languageOptions, type Locale } from "@/lib/i18n/config";
 import type { Messages } from "@/lib/i18n/messages";
 import { type ProductCategory } from "@/content/products/plans";
 import { mobilePlans } from "@/content/products/mobile-plans";
@@ -12,7 +12,7 @@ import { SiteFooter } from "./site-footer";
 import { PlanCard } from "./plan-card";
 import { Consultation } from "./consultation";
 
-const categories: ProductCategory[] = ["mobile", "internet", "tv", "sim"];
+const categories: ProductCategory[] = ["mobile", "internet"];
 
 export function Homepage({ locale, m }: { locale: Locale; m: Messages }) {
   return <>
@@ -27,7 +27,7 @@ export function Homepage({ locale, m }: { locale: Locale; m: Messages }) {
             <div className="hero-actions"><a className="button" href="#plans">{m.heroPrimary}<Arrow/></a><a className="button button-outline" href="#consultation">{m.heroSecondary}<Arrow/></a></div>
             <p className="hero-service-line">{m.heroNote}</p>
           </div>
-          <figure className="hero-media"><Image src="/images/telecom-products-concept.png" width={1536} height={1024} preload sizes="(max-width: 760px) 100vw, 55vw" alt={m.visualAlt}/><figcaption>{m.visualPlaceholder}</figcaption></figure>
+          <figure className="hero-media"><Image src="/images/mobile-internet-concept.png" width={1536} height={1024} preload sizes="(max-width: 760px) 100vw, 55vw" alt={m.visualAlt}/><figcaption>{m.visualPlaceholder}</figcaption></figure>
         </div>
       </section>
 
@@ -44,7 +44,7 @@ export function Homepage({ locale, m }: { locale: Locale; m: Messages }) {
           <p className="mobile-scroll-hint">{m.compareHint}<Arrow/></p>
           <div className={`plan-grid ${group.category}-grid`} role="region" aria-label={m.categories[group.category].name} tabIndex={0}>{group.plans.map(plan => <PlanCard key={plan.id} plan={plan} locale={locale} m={m}/>)}</div>
         </section>)}
-        <div className="other-services"><p id="sim"><strong>{m.simNote}</strong> {m.simDescription}</p><p id="tv"><strong>{m.categories.tv.name}</strong> &mdash; {m.tbd}. <a className="text-link" href="#consultation">{m.consult}<Arrow/></a></p></div>
+        <div className="other-services"><p id="sim"><strong>{m.simNote}</strong> {m.simDescription}</p></div>
         <p className="disclosure"><span aria-hidden="true">ⓘ</span>{m.planNotice}</p>
       </div></section>
 
@@ -59,7 +59,7 @@ export function Homepage({ locale, m }: { locale: Locale; m: Messages }) {
 
       <section id="support" className="support-section section-space" aria-labelledby="support-title"><div className="shell">
         <div className="support-banner"><div className="support-heading"><span className="support-globe"><Globe/></span><div><p className="section-kicker">{m.supportEyebrow}</p><h2 id="support-title">{m.supportTitle}</h2></div></div>
-          <div className="support-language-block"><p>{m.supportLanguages}</p><div className="language-names"><span lang="ko">한국어</span><span lang="en">English</span><span lang="vi">Tiếng Việt</span></div><small>{m.supportNote}</small></div>
+          <div className="support-language-block"><p>{m.supportLanguages}</p><div className="language-names">{languageOptions.map(option => <span key={option.code} lang={option.code}>{option.name}</span>)}</div><small>{m.supportNote}</small></div>
         </div>
         <p className="support-description">{m.supportDescription}</p>
         <div className="support-reasons">{m.reasons.map((reason,i) => <article key={reason.title}><span className="reason-icon">{i===0 ? <ServiceIcon type="mobile"/> : i===1 ? <ServiceIcon type="internet"/> : <ContactIcon type="chat"/>}</span><div><h3>{reason.title}</h3><p>{reason.body}</p></div></article>)}</div>

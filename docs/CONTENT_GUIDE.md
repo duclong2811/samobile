@@ -27,9 +27,11 @@ Quy trình đề xuất: thu thập nguồn → rà soát dữ kiện/thời h�
 
 ## Dịch thuật
 
+- Quy tắc bắt buộc cho cả ko/en/vi/zh/th/ne/uz: tên riêng luôn là **KT** và **SAmobile**, đúng chữ hoa/chữ thường. Không dịch, phiên âm, tách tên, viết tắt hoặc dùng CSS đổi kiểu chữ của tên thương hiệu; chỉ dịch mô tả xung quanh.
+
 - Tách thông điệp và nội dung dịch khỏi JSX; dùng khóa và ID ổn định.
 - Dùng chung nguồn dữ kiện thương mại giữa locale; không chép giá độc lập vào từng bản dịch.
-- Ưu tiên ko/en/vi; zh/th/ne/uz chỉ xuất bản khi nội dung sẵn sàng.
+- Cả ko/en/vi/zh/th/ne/uz có nội dung đầy đủ trong `messages/`; mọi locale dùng cùng dữ liệu sản phẩm. `zh` dùng tiếng Trung giản thể.
 - Dịch cả CTA, điều kiện, label, lỗi, metadata và nội dung accessibility; thống nhất thuật ngữ SIM/eSIM và thương hiệu.
 - Định dạng số/tiền/ngày theo locale khi triển khai; không ngầm đổi tiền theo ngôn ngữ.
 - Không âm thầm hiển thị điều kiện quan trọng bằng ngôn ngữ khác. Fallback, ngôn ngữ nguồn và người rà soát: TBD.

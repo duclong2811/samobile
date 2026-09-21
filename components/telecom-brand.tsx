@@ -1,9 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 
-// Plain temporary text, not an unofficial logo. See docs/brand-assets.md.
-export function TelecomBrand({ locale, placeholderLabel }: { locale: Locale; placeholderLabel: string }) {
-  return <Link href={`/${locale}`} className="telecom-brand" aria-label={`KT - ${placeholderLabel}`}>
-    <span className="telecom-logo-slot">KT</span><small>{placeholderLabel}</small>
+export function TelecomBrand({ locale }: { locale: Locale }) {
+  return <Link href={`/${locale}`} className="telecom-brand" aria-label="KT">
+    <Image src="/brands/kt-logo.png" alt="KT" width={200} height={164} unoptimized className="telecom-logo" />
   </Link>;
 }

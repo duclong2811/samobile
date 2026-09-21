@@ -1,0 +1,171 @@
+{
+  "metaTitle": "SAmobile | Koreyadagi hayotingiz uchun aloqa",
+  "metaDescription": "Koreyada yashovchi xorijliklar uchun mobil aloqa va uy interneti xizmatlarini SAmobile bilan o‘rganing. SAmobile — KT xizmatlarini taqdim etuvchi savdo agentligi.",
+  "skip": "Asosiy mazmunga o‘tish",
+  "navigation": "Asosiy menyu",
+  "languages": "Tilni tanlang",
+  "menu": "Menyu",
+  "agencyShort": "SAmobile · KT xizmatlari savdo agentligi",
+  "consult": "Maslahat",
+  "nav": [
+    "Mobil tariflar",
+    "Internet o‘rnatish",
+    "Aksiyalar",
+    "Yordam"
+  ],
+  "eyebrow": "KT xizmatlari · SAmobile savdo agentligi",
+  "heroTitle": "Mobil aloqa va internet.",
+  "heroAccent": "Tushunib tanlang.",
+  "heroDescription": "Koreyada yashovchi xorijliklar uchun mobil aloqa va uy interneti xizmatlari. Kerakli xizmatni toping, variantlarni o‘rganing va SAmobile bilan keyingi qadamni aniqlang.",
+  "heroPrimary": "Tariflarni ko‘rish",
+  "heroSecondary": "Maslahat kanallari",
+  "heroNote": "Mobil tariflar · Uy internetini o‘rnatish",
+  "visualLabel": "O‘zingizni uyda his qiling",
+  "visualCaption": "Koreyadagi hayot uchun aloqa.",
+  "visualPlaceholder": "Konsept tasvir · Haqiqiy KT uskunasi emas",
+  "categoryTitle": "Kerakli xizmatni toping",
+  "categoryIntro": "Mobil aloqa va uy internetini o‘rganing",
+  "categories": {
+    "mobile": {
+      "name": "Mobil tariflar",
+      "description": "Kundalik hayotingiz uchun aloqa."
+    },
+    "internet": {
+      "name": "Internet o‘rnatish",
+      "description": "Uyda ishlash, o‘qish va kundalik hayot uchun."
+    }
+  },
+  "plansEyebrow": "Mobil aloqa va uy interneti",
+  "plansTitle": "Mobil va internet tariflari",
+  "plansIntro": "SAmobile taqdim etgan mobil aloqa va uy interneti tariflarini taqqoslang.",
+  "placeholder": "Tasdiqlanishi kutilmoqda",
+  "priceLabel": "Oylik to‘lov",
+  "tbd": "Aniqlashtiriladi",
+  "unverified": "Hali tekshirilmagan",
+  "detailsLabel": "Trafik / tezlik",
+  "contractLabel": "Shartnoma va shartlar",
+  "planAction": "Maslahat olish",
+  "planNotice": "Tarif ma’lumotlari SAmobile tomonidan taqdim etilgan. Boshqa to‘lovlar va shartlar aniqlashtiriladi.",
+  "simNote": "SIM yoki eSIM qidiryapsizmi?",
+  "simDescription": "Qurilma mosligi, mavjudlik va ariza talablari aniqlashtiriladi.",
+  "promotions": "Aksiyalar",
+  "promotionsNote": "Tasdiqlangan takliflar shu yerda e’lon qilinadi. Hozircha aksiyalar mavjud emas.",
+  "supportEyebrow": "Koreyadagi hayotingiz uchun",
+  "supportTitle": "Koreya aloqa xizmatlari.\nSiz tushunadigan tilda.",
+  "supportDescription": "SAmobile xorijliklarga mobil aloqa, uy interneti va ariza bosqichlarini tushunishga yordam beradi. Avval ma’lumot bilan tanishing, maslahat kanallari ochilgach ehtiyojlaringizni muhokama qiling.",
+  "supportLanguages": "Saytning mavjud tillari",
+  "supportNote": "Maslahat beriladigan tillar va ish vaqti hali tasdiqlanmagan.",
+  "reasons": [
+    {
+      "title": "Qarordan oldin aniq ma’lumot",
+      "body": "Qaror qabul qilishdan oldin xizmat, xarajat va shartlarni o‘rganing."
+    },
+    {
+      "title": "Uyda ham, tashqarida ham aloqa",
+      "body": "Mobil tariflar va uy internetini o‘rnatish xizmatlarini bir joyda o‘rganing."
+    },
+    {
+      "title": "Kimga murojaat qilayotganingizni biling",
+      "body": "Sayt KT xizmatlarini taqdim etuvchi SAmobile savdo agentligi tomonidan boshqariladi, KT Corporation tomonidan emas."
+    }
+  ],
+  "processEyebrow": "Boshlash",
+  "processTitle": "Xizmatga ulanish bosqichlari",
+  "processNote": "Bu namunaviy jarayon. Hujjatlar, muvofiqlik talablari, muddatlar hamda faollashtirish yoki o‘rnatish tartibi aniqlashtiriladi.",
+  "steps": [
+    {
+      "title": "Ehtiyojingizni aniqlang",
+      "body": "O‘zingizga qulay til, kerakli xizmat va kundalik foydalanish odatlaringizni o‘ylab ko‘ring."
+    },
+    {
+      "title": "Variantlarni o‘rganing",
+      "body": "Maslahat xizmati ochilgach, tasdiqlangan narx va talablarni maslahatchi bilan ko‘rib chiqing."
+    },
+    {
+      "title": "Keyingi qadamlarni tasdiqlang",
+      "body": "Davom etishdan oldin ariza, faollashtirish yoki o‘rnatish tartibini tekshiring."
+    }
+  ],
+  "ctaEyebrow": "SAmobile bilan maslahat",
+  "ctaTitle": "Sizga mos aloqani topamiz.",
+  "ctaDescription": "Tariflar, SIM kartalar yoki uy internetini o‘rnatish bo‘yicha savolingiz bormi? SAmobile bilan bog‘lanish usullarini ko‘ring.",
+  "ctaAction": "Maslahat mavjudligini ko‘rish",
+  "availabilityTitle": "Maslahat xizmati hali ochilmagan",
+  "availabilityBody": "Aloqa kanallari, ish vaqti va maslahat tillari aniqlashtiriladi. Ushbu namuna sayt ma’lumot yig‘maydi va so‘rov yubormaydi.",
+  "prepare": "Kelajakdagi maslahat uchun qulay til, kerakli xizmat va savollaringizni o‘ylab ko‘ring.",
+  "back": "Xizmatlarga qaytish",
+  "footerTagline": "Koreyadagi hayotingiz uchun aloqa.",
+  "footerAgency": "SAmobile Janubiy Koreyada KT mobil aloqa va uy interneti xizmatlarini taqdim etuvchi savdo agentligidir. Sayt SAmobile tomonidan boshqariladi, KT Corporation tomonidan emas.",
+  "footerServices": "Xizmatlarni ko‘rish",
+  "footerInfo": "Biznes ma’lumotlari",
+  "footerBusiness": "Biznes va aloqa ma’lumotlari: aniqlashtiriladi",
+  "footerLegal": "Maxfiylik va huquqiy ma’lumotlar: aniqlashtiriladi",
+  "footerCopyright": "SAmobile · Bosh sahifa namunasi",
+  "footerNote": "Mahsulot ma’lumotlari SAmobile tomonidan taqdim etilgan. Boshqa tafsilotlar aniqlashtiriladi.",
+  "visualAlt": "Brendsiz telefon, Wi-Fi router va SIM kartaning konsept tasviri.",
+  "planPreview": "Tarif haqida qisqacha",
+  "compareHint": "Xizmatlarni taqqoslang",
+  "planFeatures": {
+    "data": "Mobil internet",
+    "speed": "Internet tezligi",
+    "format": "SIM / eSIM mavjudligi",
+    "calls": "Qo‘ng‘iroqlar va SMS",
+    "equipment": "Uskuna va o‘rnatish",
+    "benefits": "Kiritilgan imkoniyatlar",
+    "eligibility": "Moslik va talablar",
+    "contract": "Shartnoma muddati"
+  },
+  "promotionTitles": {
+    "mobile": "Mobil aloqa haqida ko‘proq.",
+    "internet": "Uyingiz uchun internet."
+  },
+  "promotionDescriptions": {
+    "mobile": "Mobil aloqa aksiyasi tafsilotlari: aniqlashtiriladi.",
+    "internet": "Uy interneti aksiyasi tafsilotlari: aniqlashtiriladi."
+  },
+  "promotionAction": "Maslahat kanallarini ko‘rish",
+  "supportLink": "Sayt tilini tanlash",
+  "channelUnavailable": "Hali ishga tushmagan",
+  "channelStatus": "Kanallar tayyorlanmoqda · Aloqa ma’lumotlari va ish vaqti aniqlashtiriladi",
+  "channelNames": {
+    "kakao": "KakaoTalk",
+    "phone": "Telefon orqali maslahat",
+    "form": "Maslahat shakli",
+    "message": "Xabar almashish"
+  },
+  "channelDescriptions": {
+    "kakao": "Maslahatchi bilan yozishing",
+    "phone": "Variantlaringizni muhokama qiling",
+    "form": "Xizmat bo‘yicha savol qoldiring",
+    "message": "O‘zingizga qulay tilda so‘rang"
+  },
+  "supportLinks": [
+    "Xizmatlar bo‘yicha yo‘riqnoma",
+    "Ariza jarayoni",
+    "Maslahat mavjudligi"
+  ],
+  "allServices": "Barcha xizmatlar",
+  "languageDialog": {
+    "welcome": "SAmobile saytiga xush kelibsiz",
+    "title": "Tilingizni tanlang",
+    "description": "Xizmatlarni o‘zingizga qulay tilda o‘rganing.",
+    "close": "Til tanlash oynasini yopish",
+    "note": "Tanlovingiz ushbu qurilmada saqlanadi. Uni sahifa yuqorisida istalgan payt o‘zgartirishingiz mumkin.",
+    "required": "Davom etish uchun tilni tanlang."
+  },
+  "product": {
+    "plan": "Tarif",
+    "perMonth": "/ oy",
+    "perDay": "/kun",
+    "highSpeedData": "Yuqori tezlikdagi trafik",
+    "afterAllowance": "Trafik tugagach",
+    "unlimitedUpTo": "{speed} Mbps gacha tezlikda cheksiz",
+    "calls": "Qo‘ng‘iroqlar",
+    "sms": "SMS",
+    "unlimited": "Cheksiz",
+    "minutes": "daqiqa",
+    "messages": "ta xabar",
+    "contract": "Shartnoma",
+    "years": "yil"
+  }
+}

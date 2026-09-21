@@ -2,7 +2,7 @@
 
 ## Trạng thái
 
-Đây là nguyên tắc thiết kế, chưa phải token hoặc mockup đã duyệt. Font Geist, màu và bố cục trong mẫu Next.js không tự động trở thành nhận diện SAmobile. Logo, bảng màu, font cuối cùng, ảnh và quyền sử dụng: TBD.
+Thiết kế homepage viễn thông hiện tại đã được duyệt làm nền tảng; giữ phong cách, màu nhấn và cấu trúc khi tinh chỉnh. Logo KT được chủ dự án cung cấp tại `public/brands/kt-logo.png`; xem `brand-assets.md` cho quy tắc sử dụng và bố trí footer. Không suy diễn quyền sử dụng cho tài sản khác.
 
 ## Hướng thị giác
 

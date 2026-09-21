@@ -1,0 +1,2 @@
+Built-in image_gen edit; source: telecom-products-concept.png (historical concept).
+Use case: precise-object-edit. Remove only the rear television, its feet and rear display plinth; fill with the same pale gray studio backdrop. Preserve phone, Wi-Fi router, SIM, foreground platforms, composition, lighting and red/gray palette. No new objects, text, logos or trademarks. Landscape 1536x1024. This is conceptual equipment, not actual KT products.
