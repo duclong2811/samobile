@@ -2,6 +2,7 @@ import { consultationChannels } from "@/content/consultation";
 import type { Messages } from "@/lib/i18n/messages";
 import { ContactIcon } from "./ui-icons";
 import { Arrow } from "./service-icon";
+import { ConsultationSelection } from "./consultation-selection";
 
 export function Consultation({ m }: { m: Messages }) {
   return <section id="consultation" className="consultation-section" aria-labelledby="consultation-title">
@@ -16,6 +17,7 @@ export function Consultation({ m }: { m: Messages }) {
             : <span className="channel-unavailable">{m.channelUnavailable}<span aria-hidden="true">—</span></span>}
         </div>)}
       </div>
+      <ConsultationSelection m={m} />
       <div className="contact-disclosure" id="availability"><strong>{m.channelStatus}</strong><p>{m.availabilityBody}</p></div>
     </div>
   </section>;

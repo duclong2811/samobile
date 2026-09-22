@@ -11,10 +11,13 @@ import { SiteHeader } from "./site-header";
 import { SiteFooter } from "./site-footer";
 import { PlanCard } from "./plan-card";
 import { Consultation } from "./consultation";
+import { phoneRepository } from "@/lib/products/phone-repository";
+import { PhoneCard } from "./phone-card";
 
 const categories: ProductCategory[] = ["mobile", "internet"];
 
-export function Homepage({ locale, m }: { locale: Locale; m: Messages }) {
+export async function Homepage({ locale, m }: { locale: Locale; m: Messages }) {
+  const featuredPhones = (await phoneRepository.list()).filter(phone => ["iphone-17", "galaxy-s26", "galaxy-z-flip8"].includes(phone.id));
   return <>
     <a className="skip-link" href="#main">{m.skip}</a>
     <SiteHeader locale={locale} m={m}/>
@@ -46,6 +49,12 @@ export function Homepage({ locale, m }: { locale: Locale; m: Messages }) {
         </section>)}
         <div className="other-services"><p id="sim"><strong>{m.simNote}</strong> {m.simDescription}</p></div>
         <p className="disclosure"><span aria-hidden="true">ⓘ</span>{m.planNotice}</p>
+      </div></section>
+
+      <section className="home-phones section-space" aria-labelledby="home-phones-title"><div className="shell">
+        <div className="section-heading"><div><p className="section-kicker">{m.phones.eyebrow}</p><h2 id="home-phones-title">{m.phones.homeTitle}<span className="heading-dot">.</span></h2><p>{m.phones.homeIntro}</p></div><a className="text-link" href={`/${locale}/phones`}>{m.phones.viewAll}<Arrow /></a></div>
+        <p className="fixture-notice">{m.phones.catalogNotice}</p>
+        <div className="phone-grid home-phone-grid">{featuredPhones.map((phone) => <PhoneCard key={phone.id} phone={phone} locale={locale} m={m} />)}</div>
       </div></section>
 
       <section id="promotions" className="promotions-section section-space" aria-labelledby="promotions-title"><div className="shell">

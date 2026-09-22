@@ -15,6 +15,13 @@
 
 Một cây `app/[locale]`, cấu hình locale trung tâm và dữ liệu trong repository trước khi cần CMS. Đây là định hướng chưa triển khai; xem [architecture.md](architecture.md).
 
+## Đã xác nhận — 2026-09-22
+
+- Phiên bản đầu smartphone là catalog và luồng yêu cầu tư vấn, không phải checkout/order.
+- Lãi đơn/phẳng 6%/năm với kỳ hạn 6 và 12 tháng; cấu hình tập trung, kết quả làm tròn đến won gần nhất.
+- Dữ liệu và ảnh hiện tại chỉ là development fixture rõ ràng; cần thay bằng dữ liệu/asset được SAmobile phê duyệt trước phát hành.
+- UI nhận `Phone` qua repository boundary để nguồn cục bộ có thể được thay bằng Payload CMS sau này.
+
 ## Còn mở
 
 | Chủ đề | Cần xác nhận |

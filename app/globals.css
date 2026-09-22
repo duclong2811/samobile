@@ -478,3 +478,109 @@ html[lang="ne"] h1, html[lang="ne"] h2, html[lang="ne"] h3 { letter-spacing: 0; 
   .language-dialog { padding-inline: 14px; }
   .language-option strong { font-size: 14px; }
 }
+
+/* Smartphone catalog: one shared treatment across campaign themes. */
+.home-phones { background: #fff; border-block: 1px solid var(--line); }
+.fixture-notice { margin: 0 0 24px; padding: 12px 14px; border-left: 3px solid var(--accent); background: #f7f7f7; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.phone-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+.phone-card { display: flex; flex-direction: column; min-width: 0; border-bottom: 1px solid var(--line); background: #fff; }
+.phone-card-image { display: grid; aspect-ratio: 47 / 55; place-items: center; background: #f4f5f6; overflow: hidden; }
+.phone-card-image img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; transition: transform .2s ease; }
+.phone-card-image:hover img { transform: scale(1.015); }
+.phone-card-body { display: flex; flex: 1; flex-direction: column; padding: 22px; }
+.phone-brand { margin: 0 0 3px; color: var(--muted); font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.phone-card h3 { margin: 0; font-size: 24px; }
+.phone-card-swatches { display: flex; gap: 7px; min-height: 18px; margin: 12px 0 18px; }
+.phone-card-swatches span { width: 15px; height: 15px; border: 1px solid #8f9396; border-radius: 50%; }
+.fixture-label { display: inline-block; align-self: flex-start; margin: 10px 0 18px; color: #8a3035; font-size: 11px; font-weight: 800; letter-spacing: .05em; }
+.phone-card-facts { margin: 0 0 21px; border-top: 1px solid var(--line); }
+.phone-card-facts div { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+.phone-card-facts dt { color: var(--muted); }
+.phone-card-facts dd { margin: 0; text-align: right; font-weight: 700; }
+.phone-starting-price { display: flex; flex-direction: column; gap: 2px; margin: auto 0 16px; }
+.phone-starting-price span { color: var(--muted); font-size: 12px; }
+.phone-starting-price strong { font-size: 25px; letter-spacing: -.04em; }
+.phone-card-action { width: 100%; }
+.phones-hero { padding: 64px 0 58px; background: #f5f5f5; border-bottom: 1px solid var(--line); }
+.phones-hero nav, .phone-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: 13px; }
+.phones-hero nav { margin-bottom: 38px; }
+.phones-hero nav a, .phone-breadcrumb a { color: inherit; text-underline-offset: 3px; }
+.phones-hero h1 { margin: 7px 0 13px; font-size: clamp(38px,5vw,64px); }
+.phones-hero > .shell > p:not(.section-kicker):not(.fixture-notice) { max-width: 700px; font-size: 18px; line-height: 1.7; color: var(--muted); }
+.phones-hero .fixture-notice { max-width: 760px; margin: 28px 0 0; background: #fff; }
+.phone-list-consult { margin-top: 30px; }
+.phone-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.phone-filters button { min-width: 88px; min-height: 44px; padding: 9px 18px; border: 1px solid #aeb2b5; background: #fff; color: var(--foreground); font: inherit; font-weight: 700; cursor: pointer; }
+.phone-filters button[aria-pressed="true"] { color: #fff; background: var(--foreground); border-color: var(--foreground); }
+.phone-result-count { margin: 0 0 22px; color: var(--muted); font-size: 13px; }
+.phone-detail-main { padding: 28px 0 80px; }
+.phone-breadcrumb { margin-bottom: 28px; }
+.phone-product { display: grid; grid-template-columns: minmax(0,1fr) minmax(380px,.9fr); gap: clamp(40px,7vw,96px); align-items: start; }
+.phone-product-media { position: sticky; top: 24px; text-align: center; background: #f4f5f6; }
+.phone-product-media img { display: block; width: 100%; aspect-ratio: 47 / 55; object-fit: contain; object-position: center; }
+.phone-product-media p { margin: 0; padding: 12px; color: var(--muted); font-size: 12px; }
+.phone-configurator h1 { margin: 3px 0 0; font-size: clamp(34px,4vw,52px); }
+.selected-device-price { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; margin: 18px 0 28px; padding-block: 18px; border-block: 1px solid var(--line); }
+.selected-device-price span { color: var(--muted); }
+.selected-device-price strong { font-size: 30px; white-space: nowrap; }
+.phone-configurator fieldset { margin: 0; padding: 22px 0; border: 0; border-bottom: 1px solid var(--line); }
+.phone-configurator legend { padding: 0; margin-bottom: 13px; font-size: 15px; font-weight: 700; }
+.variant-options { display: flex; flex-wrap: wrap; gap: 9px; }
+.variant-options button { min-height: 46px; min-width: 92px; padding: 10px 16px; border: 1px solid #b9bdc0; background: #fff; color: var(--foreground); font: inherit; font-weight: 700; cursor: pointer; }
+.variant-options button:hover { border-color: var(--foreground); }
+.variant-options button[aria-pressed="true"] { border: 2px solid var(--accent); padding: 9px 15px; box-shadow: inset 0 0 0 1px #fff; outline: 1px solid var(--accent); }
+.color-options button { display: inline-flex; align-items: center; gap: 9px; min-width: 0; }
+.color-swatch { width: 18px; height: 18px; border: 1px solid #777; border-radius: 50%; flex: 0 0 auto; }
+.financing-summary { margin-top: 28px; padding: 26px; background: #f3f4f5; border-top: 3px solid var(--foreground); }
+.monthly-payment { display: flex; align-items: baseline; gap: 8px; margin: 7px 0 23px; }
+.monthly-payment strong { color: var(--accent); font-size: clamp(32px,4vw,46px); letter-spacing: -.05em; }
+.monthly-payment span { color: var(--muted); }
+.financing-summary dl { margin: 0; }
+.financing-summary dl div { display: flex; justify-content: space-between; gap: 20px; padding: 9px 0; border-bottom: 1px solid #d7d9da; }
+.financing-summary dt { color: var(--muted); }
+.financing-summary dd { margin: 0; font-weight: 700; text-align: right; }
+.financing-disclaimer { margin: 18px 0 0; color: var(--muted); font-size: 12px; line-height: 1.65; }
+.phone-inquiry { width: 100%; margin-top: 18px; min-height: 54px; }
+.selection-note { margin: 10px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.price-consultation-state { margin-top: 26px; padding: 24px; border-left: 4px solid var(--accent); background: #f3f4f5; }
+.price-consultation-state h2 { margin: 0 0 9px; font-size: 21px; }
+.price-consultation-state p { margin: 5px 0; color: var(--muted); line-height: 1.65; }
+.phone-specifications { margin-top: 42px; padding-top: 30px; border-top: 1px solid var(--line); }
+.phone-specifications h2 { margin: 0 0 18px; font-size: 24px; }
+.phone-specifications dl { margin: 0; }
+.phone-specifications dl div { display: grid; grid-template-columns: 130px 1fr; gap: 18px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.phone-specifications dt { color: var(--muted); }
+.phone-specifications dd { margin: 0; font-weight: 650; }
+.phone-specifications > p { color: var(--muted); font-size: 12px; line-height: 1.6; }
+.consultation-selection { margin: 24px 0; padding: 22px; background: #fff; color: var(--foreground); border-left: 4px solid var(--accent); }
+.consultation-selection h3 { margin: 0 0 14px; font-size: 19px; }
+.consultation-selection dl { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px 24px; margin: 0; }
+.consultation-selection dl div { min-width: 0; }
+.consultation-selection dt { color: var(--muted); font-size: 12px; }
+.consultation-selection dd { margin: 3px 0 0; font-weight: 700; }
+.consultation-selection > p { margin: 16px 0 0; color: var(--muted); font-size: 12px; }
+@media (max-width: 900px) {
+  .phone-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .home-phone-grid .phone-card:last-child { display: none; }
+  .phone-product { grid-template-columns: 1fr; gap: 32px; }
+  .phone-product-media { position: static; max-width: 620px; margin-inline: auto; }
+}
+@media (max-width: 600px) {
+  .phone-grid { grid-template-columns: 1fr; }
+  .home-phone-grid .phone-card:last-child { display: flex; }
+  .phones-hero { padding: 38px 0; }
+  .phones-hero nav { margin-bottom: 24px; }
+  .phones-hero > .shell > p:not(.section-kicker):not(.fixture-notice) { font-size: 15px; }
+  .phone-card-body { padding: 20px; }
+  .phone-detail-main { padding: 20px 0 54px; }
+  .selected-device-price { align-items: flex-start; flex-direction: column; gap: 6px; }
+  .selected-device-price strong { font-size: 28px; }
+  .variant-options button { flex: 1 1 calc(50% - 9px); min-width: 0; }
+  .financing-summary { padding: 21px 18px; }
+  .financing-summary dl div { font-size: 13px; }
+  .monthly-payment { flex-wrap: wrap; }
+  .phone-filters { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .phone-filters button { min-width: 0; padding-inline: 8px; }
+  .phone-specifications dl div { grid-template-columns: 1fr; gap: 4px; }
+  .consultation-selection dl { grid-template-columns: 1fr 1fr; }
+}
