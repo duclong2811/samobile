@@ -27,6 +27,7 @@ Một cây `app/[locale]`, cấu hình locale trung tâm và dữ liệu trong r
 - Mini game vòng quay được trình diễn bằng một trang riêng, dẫn từ một block gọn trên homepage.
 - Bản demo frontend có 10 ô bằng nhau: giảm 10%, giảm ₩10.000, giảm ₩50.000 và 7 ô mất lượt.
 - Kết quả demo không có giá trị nhận thưởng. Backend quyết định kết quả, giới hạn lượt, xác minh và phát thưởng là hạng mục bắt buộc trước khi ra mắt thật.
+- Đã triển khai bản hiện tại lên Cloudflare Workers tại https://samobile.duclong-reg.workers.dev; custom domain vẫn còn mở.
 
 ## Còn mở
 

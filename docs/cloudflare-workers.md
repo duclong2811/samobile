@@ -1,6 +1,6 @@
 # Cloudflare Workers
 
-Thiết lập theo [hướng dẫn Next.js của Cloudflare](https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/) bằng vinext (hiện là beta). Phạm vi được duyệt: chuẩn bị cấu hình và kiểm tra cục bộ; chưa đăng nhập hoặc triển khai. Các ghi chú “documentation only” trong tài liệu ban đầu là lịch sử, không áp dụng cho phạm vi này.
+Thiết lập theo [hướng dẫn Next.js của Cloudflare](https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/) bằng vinext (hiện là beta). Phạm vi được duyệt: chuẩn bị cấu hình và kiểm tra cục bộ; chưa đăng nhập hoặc triển khai. Các ghi chú “documentation only” trong tài liệu ban đầu là lịch sử, không áp dụng cho phạm vi này. Ngày 2026-09-28 chủ dự án yêu cầu đẩy bản hiện tại lên hosting; xem [Trạng thái triển khai](#trạng-thái-triển-khai).
 
 ## Cài đặt và phát triển
 
@@ -14,6 +14,14 @@ Chạy từ thư mục chứa `package.json` và `wrangler.jsonc` (gốc reposit
 
 `react-server-dom-webpack` được khóa ở 19.2.8 để khớp React/React DOM hiện tại. Không dùng `--force` hoặc `--legacy-peer-deps`; không nâng phiên bản các dependency có sẵn.
 
+## Trạng thái triển khai
+
+- URL production: https://samobile.duclong-reg.workers.dev (Worker `samobile`, tài khoản Cloudflare của chủ dự án).
+- Ngày 2026-09-28: đăng nhập OAuth bằng `npx wrangler login`, build bằng `npm run build:vinext`, deploy bằng `npm run deploy:vinext -- --skip-build`.
+- Route đã kiểm tra trên bản live: `/` trả 307 tới `/en`; `/en`, `/vi`, `/ko`, `/vi/lucky-wheel`, `/ko/phones`, `/vi/phones/iphone-17` trả 200.
+- Đây là URL `workers.dev`; custom domain vẫn là hạng mục còn mở trong `decisions.md`.
+- Máy chủ dự án hiện giữ phiên OAuth của wrangler; deploy lại chỉ cần `npm run build:vinext` rồi `npm run deploy:vinext -- --skip-build`.
+
 ## Cloudflare Workers Builds
 
 Thiết lập root directory là thư mục chứa `package.json`: `/` nếu kết nối repository Git hiện tại; chỉ dùng `samobile` nếu repository trên remote có thư mục cha đó.
@@ -24,7 +32,7 @@ Thiết lập root directory là thư mục chứa `package.json`: `/` nếu k�
 | Build command | `npm run build:vinext` |
 | Deploy command | `npm run deploy:vinext -- --skip-build` |
 
-Deploy command dùng output của build trước đó. Khi chạy độc lập, `npm run deploy:vinext` tự build rồi deploy. **Các lệnh deploy thật chưa được chạy.** Việc kết nối tài khoản/repository Cloudflare thuộc bước triển khai sau này; không lưu token hoặc account ID giả vào repository.
+Deploy command dùng output của build trước đó. Khi chạy độc lập, `npm run deploy:vinext` tự build rồi deploy. Ngày 2026-09-28, deploy thật đã chạy trực tiếp từ máy chủ dự án bằng OAuth wrangler; xem [Trạng thái triển khai](#trạng-thái-triển-khai). Việc nối repository Git vào Cloudflare Workers Builds vẫn là bước sau; không lưu token hoặc account ID giả vào repository.
 
 ## Cấu hình
 
