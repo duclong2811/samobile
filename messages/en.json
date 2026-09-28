@@ -153,6 +153,42 @@
     "note": "Your choice will be remembered on this device. You can change it in the header anytime.",
     "required": "Please choose a language to continue."
   },
+  "campaign": {
+    "previewLabel": "Campaign preview",
+    "previewAriaLabel": "Preview homepage campaign",
+    "options": { "basic": "Basic", "new-semester": "New Semester", "chuseok": "Chuseok", "christmas": "Christmas" },
+    "campaigns": {
+      "new-semester": { "badge": "NEW SEMESTER", "title": "A new life in Korea.", "accent": "Connected from day one.", "description": "Settle into study, work and everyday life with mobile and home Internet services you can understand.", "strip": "Mobile · Home Internet · Multilingual Support", "primary": "Start your connection" },
+      "chuseok": { "badge": "HAPPY CHUSEOK", "title": "Far from home.", "accent": "Close to the people who matter.", "description": "Stay connected with family wherever they are, throughout a warm and peaceful Chuseok.", "strip": "Mobile · Home Internet · Multilingual Support", "primary": "Explore connection options" },
+      "christmas": { "badge": "MERRY CHRISTMAS", "title": "A warm Christmas.", "accent": "Connected together.", "description": "Keep the people who matter close with mobile and home Internet services for life in Korea.", "strip": "Mobile · Home Internet · Multilingual Support", "primary": "Explore connection options" }
+    }
+  },
+  "phones": {
+    "imageUsageNote":"Official manufacturer reference image · internal catalog demo",
+    "filterLabel":"Filter phones by brand", "all":"All", "resultCount":"{count} phones", "priceStatus":"SAmobile price", "contactForPrice":"Contact for price", "catalogNotice":"Manufacturer product facts are verified from official sources. SAmobile prices and availability have not been supplied and require consultation.", "priceRequiredTitle":"Price confirmation required", "priceRequiredBody":"SAmobile pricing for this configuration has not been verified.", "financingUnavailable":"Installment estimates will be shown only after a verified device price is available.", "keySpecifications":"Key specifications", "manufacturerSource":"Manufacturer source checked", "specificationLabels":{"display":"Display","camera":"Camera","weight":"Weight","battery":"Battery","connectivity":"Connectivity"},
+    "selectionSummary": "Your smartphone selection", "phone": "Phone", "estimatedMonthly": "Estimated monthly payment", "noOrder": "Selection summary only. No order has been placed.",
+    "eyebrow": "SMARTPHONES AT SAmobile", "homeTitle": "Find your next phone", "homeIntro": "Explore devices, choose the configuration you prefer and review a transparent installment estimate.", "viewAll": "View all phones", "title": "Smartphones", "intro": "Compare device configurations and estimated installment costs before speaking with SAmobile.", "browse": "Browse phones", "compareIntro": "Compare starting prices, storage and available colors.", "demoLabel": "DEVELOPMENT DEMO", "demoNotice": "Demo devices, prices and availability shown here are fictional development fixtures, not verified SAmobile offers.", "from": "From", "storage": "Storage", "color": "Color", "colors": "Colors", "installment": "Installment term", "months": "{months} months", "devicePrice": "Device price", "estimate": "INSTALLMENT ESTIMATE", "perMonth": "/ month", "annualInterest": "Annual interest rate", "installmentTerm": "Installment term", "interestAmount": "Interest", "totalPayment": "Total payment", "disclaimer": "Estimated installment amount based on a fixed annual interest rate of {rate}%. Final payment conditions are confirmed during consultation.", "inquiry": "Consultation / purchase inquiry", "selectionPreserved": "Your selected phone, storage, color, term and estimate will be carried to the consultation page. No order is created.", "viewPhone": "View phone", "generalConsultation": "Ask about smartphones", "empty": "No phones are available to display.", "breadcrumb": "Breadcrumb", "home": "Home", "placeholderImage": "Neutral development image · not an actual phone model", "imageAlt": { "genericPhone": "Neutral illustration of a generic smartphone; not an actual model." }, "colorNames": { "graphite": "Graphite", "silver": "Silver", "sage": "Sage", "sand": "Sand" }
+  },
+  "luckyWheel": {
+    "eyebrow": "SAmobile LUCKY SPIN",
+    "homeTitle": "Try your luck",
+    "homeIntro": "Spin the demo wheel for a chance to reveal one of three sample rewards.",
+    "homeAction": "Open the lucky wheel",
+    "title": "Lucky wheel",
+    "intro": "One spin, ten segments. See where the wheel lands in this frontend demonstration.",
+    "prizeTitle": "Rewards on the wheel",
+    "prizes": ["10% discount", "₩10,000 discount", "₩50,000 discount"],
+    "demoLabel": "Frontend demo.",
+    "demoNotice": "Results are generated in this browser and have no reward value. Eligibility, limits, verification and prize issuance require a future backend.",
+    "spin": "Spin the wheel",
+    "spinning": "Spinning…",
+    "spinAgain": "Spin again",
+    "winnerTitle": "The wheel landed on",
+    "winnerBody": "Demo result only — no reward has been issued.",
+    "noPrizeTitle": "No reward this time",
+    "noPrizeBody": "This is a demo, so you can spin again.",
+    "rewards": { "discount10Percent": "10% OFF", "discount10000Krw": "₩10,000 OFF", "discount50000Krw": "₩50,000 OFF", "noPrize": "TRY AGAIN" }
+  },
   "product": {
     "plan": "Plan",
     "perMonth": "/ month",
@@ -167,71 +203,5 @@
     "messages": "messages",
     "contract": "Contract",
     "years": "years"
-  },
-  "phones": {
-    "imageUsageNote": "Official manufacturer reference image · internal catalog demo",
-    "filterLabel": "Filter phones by brand",
-    "all": "All",
-    "resultCount": "{count} phones",
-    "priceStatus": "SAmobile price",
-    "contactForPrice": "Contact for price",
-    "catalogNotice": "Manufacturer product facts are verified from official sources. SAmobile prices and availability have not been supplied and require consultation.",
-    "priceRequiredTitle": "Price confirmation required",
-    "priceRequiredBody": "SAmobile pricing for this configuration has not been verified.",
-    "financingUnavailable": "Installment estimates will be shown only after a verified device price is available.",
-    "keySpecifications": "Key specifications",
-    "manufacturerSource": "Manufacturer source checked",
-    "specificationLabels": {
-      "display": "Display",
-      "camera": "Camera",
-      "weight": "Weight",
-      "battery": "Battery",
-      "connectivity": "Connectivity"
-    },
-    "selectionSummary": "Your smartphone selection",
-    "phone": "Phone",
-    "estimatedMonthly": "Estimated monthly payment",
-    "noOrder": "Selection summary only. No order has been placed.",
-    "eyebrow": "SMARTPHONES AT SAmobile",
-    "homeTitle": "Find your next phone",
-    "homeIntro": "Explore devices, choose the configuration you prefer and review a transparent installment estimate.",
-    "viewAll": "View all phones",
-    "title": "Smartphones",
-    "intro": "Compare device configurations and estimated installment costs before speaking with SAmobile.",
-    "browse": "Browse phones",
-    "compareIntro": "Compare starting prices, storage and available colors.",
-    "demoLabel": "DEVELOPMENT DEMO",
-    "demoNotice": "Demo devices, prices and availability shown here are fictional development fixtures, not verified SAmobile offers.",
-    "from": "From",
-    "storage": "Storage",
-    "color": "Color",
-    "colors": "Colors",
-    "installment": "Installment term",
-    "months": "{months} months",
-    "devicePrice": "Device price",
-    "estimate": "INSTALLMENT ESTIMATE",
-    "perMonth": "/ month",
-    "annualInterest": "Annual interest rate",
-    "installmentTerm": "Installment term",
-    "interestAmount": "Interest",
-    "totalPayment": "Total payment",
-    "disclaimer": "Estimated installment amount based on a fixed annual interest rate of {rate}%. Final payment conditions are confirmed during consultation.",
-    "inquiry": "Consultation / purchase inquiry",
-    "selectionPreserved": "Your selected phone, storage, color, term and estimate will be carried to the consultation page. No order is created.",
-    "viewPhone": "View phone",
-    "generalConsultation": "Ask about smartphones",
-    "empty": "No phones are available to display.",
-    "breadcrumb": "Breadcrumb",
-    "home": "Home",
-    "placeholderImage": "Neutral development image · not an actual phone model",
-    "imageAlt": {
-      "genericPhone": "Neutral illustration of a generic smartphone; not an actual model."
-    },
-    "colorNames": {
-      "graphite": "Graphite",
-      "silver": "Silver",
-      "sage": "Sage",
-      "sand": "Sand"
-    }
   }
 }

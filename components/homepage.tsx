@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { languageOptions, type Locale } from "@/lib/i18n/config";
 import type { Messages } from "@/lib/i18n/messages";
+import type { CampaignMessages } from "@/content/campaigns";
 import { type ProductCategory } from "@/content/products/plans";
 import { mobilePlans } from "@/content/products/mobile-plans";
 import { internetPlans } from "@/content/products/internet-plans";
@@ -11,8 +11,10 @@ import { SiteHeader } from "./site-header";
 import { SiteFooter } from "./site-footer";
 import { PlanCard } from "./plan-card";
 import { Consultation } from "./consultation";
+import { CampaignHero } from "./campaign-hero";
 import { phoneRepository } from "@/lib/products/phone-repository";
 import { PhoneCard } from "./phone-card";
+import Link from "next/link";
 
 const categories: ProductCategory[] = ["mobile", "internet"];
 
@@ -22,17 +24,7 @@ export async function Homepage({ locale, m }: { locale: Locale; m: Messages }) {
     <a className="skip-link" href="#main">{m.skip}</a>
     <SiteHeader locale={locale} m={m}/>
     <main id="main" tabIndex={-1}>
-      <section className="commerce-hero" aria-labelledby="hero-heading">
-        <div className="shell hero-inner">
-          <div className="hero-copy"><p className="hero-eyebrow">{m.eyebrow}</p>
-            <h1 id="hero-heading">{m.heroTitle}<br/><span>{m.heroAccent}</span></h1>
-            <p className="hero-description">{m.heroDescription}</p>
-            <div className="hero-actions"><a className="button" href="#plans">{m.heroPrimary}<Arrow/></a><a className="button button-outline" href="#consultation">{m.heroSecondary}<Arrow/></a></div>
-            <p className="hero-service-line">{m.heroNote}</p>
-          </div>
-          <figure className="hero-media"><Image src="/images/mobile-internet-concept.png" width={1536} height={1024} preload sizes="(max-width: 760px) 100vw, 55vw" alt={m.visualAlt}/><figcaption>{m.visualPlaceholder}</figcaption></figure>
-        </div>
-      </section>
+      <CampaignHero m={m} campaignMessages={m.campaign as CampaignMessages}/>
 
       <section id="services" className="service-shortcuts shell" aria-label={m.categoryTitle}>
         {categories.map(category => <a key={category} className={`service-shortcut shortcut-${category}`} href={`#${category}`}>
@@ -55,6 +47,11 @@ export async function Homepage({ locale, m }: { locale: Locale; m: Messages }) {
         <div className="section-heading"><div><p className="section-kicker">{m.phones.eyebrow}</p><h2 id="home-phones-title">{m.phones.homeTitle}<span className="heading-dot">.</span></h2><p>{m.phones.homeIntro}</p></div><a className="text-link" href={`/${locale}/phones`}>{m.phones.viewAll}<Arrow /></a></div>
         <p className="fixture-notice">{m.phones.catalogNotice}</p>
         <div className="phone-grid home-phone-grid">{featuredPhones.map((phone) => <PhoneCard key={phone.id} phone={phone} locale={locale} m={m} />)}</div>
+      </div></section>
+
+      <section className="home-lucky-wheel section-space" aria-labelledby="home-lucky-wheel-title"><div className="shell home-lucky-wheel-inner">
+        <div className="home-lucky-wheel-copy"><p className="section-kicker">{m.luckyWheel.eyebrow}</p><h2 id="home-lucky-wheel-title">{m.luckyWheel.homeTitle}<span className="heading-dot">.</span></h2><p>{m.luckyWheel.homeIntro}</p><Link className="button" href={`/${locale}/lucky-wheel`}>{m.luckyWheel.homeAction}<Arrow /></Link></div>
+        <div className="home-wheel-preview" aria-hidden="true"><span>10%</span><i>₩10K</i><b>₩50K</b></div>
       </div></section>
 
       <section id="promotions" className="promotions-section section-space" aria-labelledby="promotions-title"><div className="shell">

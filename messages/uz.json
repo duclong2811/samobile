@@ -153,6 +153,42 @@
     "note": "Tanlovingiz ushbu qurilmada saqlanadi. Uni sahifa yuqorisida istalgan payt o‘zgartirishingiz mumkin.",
     "required": "Davom etish uchun tilni tanlang."
   },
+  "campaign": {
+    "previewLabel": "Kampaniyani ko‘rish",
+    "previewAriaLabel": "Bosh sahifa kampaniyasini oldindan ko‘rish",
+    "options": { "basic": "Asosiy", "new-semester": "Yangi semestr", "chuseok": "Chuseok", "christmas": "Rojdestvo" },
+    "campaigns": {
+      "new-semester": { "badge": "NEW SEMESTER", "title": "Koreyada yangi hayot.", "accent": "Birinchi kundanoq aloqada.", "description": "Tushunarli mobil va uy interneti xizmatlari bilan o‘qish, ish va kundalik hayotni boshlang.", "strip": "Mobil aloqa · Uy interneti · Ko‘p tilli yordam", "primary": "Yangi ulanishni boshlash" },
+      "chuseok": { "badge": "HAPPY CHUSEOK", "title": "Uydan uzoqda bo‘lsangiz ham.", "accent": "Aziz insonlaringizga yaqinsiz.", "description": "Oilangiz qayerda bo‘lmasin, iliq va osoyishta Chuseok davomida ular bilan aloqada qoling.", "strip": "Mobil aloqa · Uy interneti · Ko‘p tilli yordam", "primary": "Ulanish variantlarini ko‘rish" },
+      "christmas": { "badge": "MERRY CHRISTMAS", "title": "Iliq Rojdestvo.", "accent": "Birga va aloqada.", "description": "Koreyadagi hayot uchun mobil va uy interneti xizmatlari bilan aziz insonlaringizni yaqin tuting.", "strip": "Mobil aloqa · Uy interneti · Ko‘p tilli yordam", "primary": "Ulanish variantlarini ko‘rish" }
+    }
+  },
+  "phones": {
+    "imageUsageNote":"Ishlab chiqaruvchining rasmiy ma’lumot rasmi · ichki katalog demosı",
+    "filterLabel":"Telefonlarni brend bo‘yicha filtrlash", "all":"Barchasi", "resultCount":"{count} ta telefon", "priceStatus":"SAmobile narxi", "contactForPrice":"Narxni so‘rang", "catalogNotice":"Ishlab chiqaruvchi ma’lumotlari rasmiy manbalardan tekshirildi. SAmobile narxlari va mavjudligi berilmagan, maslahat talab etiladi.", "priceRequiredTitle":"Narxni tasdiqlash kerak", "priceRequiredBody":"Bu konfiguratsiya uchun SAmobile narxi tasdiqlanmagan.", "financingUnavailable":"Bo‘lib to‘lash hisobi faqat tasdiqlangan qurilma narxi mavjud bo‘lganda ko‘rsatiladi.", "keySpecifications":"Asosiy xususiyatlar", "manufacturerSource":"Ishlab chiqaruvchi manbasi tekshirildi", "specificationLabels":{"display":"Ekran","camera":"Kamera","weight":"Vazn","battery":"Batareya","connectivity":"Ulanish"},
+    "selectionSummary": "Smartfon tanlovingiz", "phone": "Telefon", "estimatedMonthly": "Taxminiy oylik to‘lov", "noOrder": "Bu faqat tanlov xulosasi. Buyurtma berilmadi.",
+    "eyebrow": "SAmobile SMARTFONLARI", "homeTitle": "Keyingi telefoningizni toping", "homeIntro": "Qurilmalarni ko‘ring, moslamani tanlang va shaffof bo‘lib to‘lash hisobini tekshiring.", "viewAll": "Barcha telefonlarni ko‘rish", "title": "Smartfonlar", "intro": "SAmobile bilan maslahatlashishdan oldin qurilma variantlari va taxminiy bo‘lib to‘lash xarajatlarini solishtiring.", "browse": "Telefonlarni ko‘rish", "compareIntro": "Boshlang‘ich narx, xotira va mavjud ranglarni solishtiring.", "demoLabel": "ISHLAB CHIQISH DEMOSI", "demoNotice": "Ko‘rsatilgan qurilmalar, narxlar va mavjudlik xayoliy ishlab chiqish ma’lumotlari bo‘lib, tasdiqlangan SAmobile takliflari emas.", "from": "Boshlanishi", "storage": "Xotira", "color": "Rang", "colors": "Ranglar", "installment": "Bo‘lib to‘lash muddati", "months": "{months} oy", "devicePrice": "Qurilma narxi", "estimate": "BO‘LIB TO‘LASH HISOBI", "perMonth": "/ oy", "annualInterest": "Yillik foiz", "installmentTerm": "Bo‘lib to‘lash muddati", "interestAmount": "Foiz summasi", "totalPayment": "Jami to‘lov", "disclaimer": "Yillik qat’iy {rate}% foiz stavkasi asosidagi taxminiy bo‘lib to‘lash summasi. Yakuniy shartlar maslahat vaqtida tasdiqlanadi.", "inquiry": "Maslahat / xarid so‘rovi", "selectionPreserved": "Tanlangan telefon, xotira, rang, muddat va hisob maslahat sahifasiga uzatiladi. Buyurtma yaratilmaydi.", "viewPhone": "Telefonni ko‘rish", "generalConsultation": "Smartfonlar haqida so‘rash", "empty": "Ko‘rsatish uchun telefon yo‘q.", "breadcrumb": "Navigatsiya yo‘li", "home": "Bosh sahifa", "placeholderImage": "Neytral ishlab chiqish rasmi · haqiqiy telefon modeli emas", "imageAlt": { "genericPhone": "Oddiy smartfonning neytral tasviri; haqiqiy model emas." }, "colorNames": { "graphite": "Grafit", "silver": "Kumush", "sage": "Shalfey", "sand": "Qum" }
+  },
+  "luckyWheel": {
+    "eyebrow": "SAmobile OMAD G‘ILDIRAGI",
+    "homeTitle": "Omadingizni sinab ko‘ring",
+    "homeIntro": "Uchta namunaviy sovg‘adan birini ko‘rish uchun demo g‘ildirakni aylantiring.",
+    "homeAction": "Omad g‘ildiragini ochish",
+    "title": "Omad g‘ildiragi",
+    "intro": "Bir aylantirish, o‘nta bo‘lim. Frontend demoda g‘ildirak qayerda to‘xtashini ko‘ring.",
+    "prizeTitle": "G‘ildirakdagi sovg‘alar",
+    "prizes": ["10% chegirma", "₩10,000 chegirma", "₩50,000 chegirma"],
+    "demoLabel": "Frontend demo.",
+    "demoNotice": "Natija brauzerda yaratiladi va haqiqiy sovrin kuchiga ega emas. Ishtirok shartlari, cheklovlar, tekshiruv va sovrin berish uchun keyinchalik backend kerak.",
+    "spin": "G‘ildirakni aylantirish",
+    "spinning": "Aylanmoqda…",
+    "spinAgain": "Yana aylantirish",
+    "winnerTitle": "G‘ildirak to‘xtagan joy",
+    "winnerBody": "Bu faqat demo natija — hech qanday sovrin berilmadi.",
+    "noPrizeTitle": "Bu safar sovrin yo‘q",
+    "noPrizeBody": "Bu demo, shuning uchun yana aylantirishingiz mumkin.",
+    "rewards": { "discount10Percent": "10% CHEGIRMA", "discount10000Krw": "₩10,000 CHEGIRMA", "discount50000Krw": "₩50,000 CHEGIRMA", "noPrize": "OMAD KELMADI" }
+  },
   "product": {
     "plan": "Tarif",
     "perMonth": "/ oy",
@@ -167,71 +203,5 @@
     "messages": "ta xabar",
     "contract": "Shartnoma",
     "years": "yil"
-  },
-  "phones": {
-    "imageUsageNote": "Ishlab chiqaruvchining rasmiy ma’lumot rasmi · ichki katalog demosı",
-    "filterLabel": "Telefonlarni brend bo‘yicha filtrlash",
-    "all": "Barchasi",
-    "resultCount": "{count} ta telefon",
-    "priceStatus": "SAmobile narxi",
-    "contactForPrice": "Narxni so‘rang",
-    "catalogNotice": "Ishlab chiqaruvchi ma’lumotlari rasmiy manbalardan tekshirildi. SAmobile narxlari va mavjudligi berilmagan, maslahat talab etiladi.",
-    "priceRequiredTitle": "Narxni tasdiqlash kerak",
-    "priceRequiredBody": "Bu konfiguratsiya uchun SAmobile narxi tasdiqlanmagan.",
-    "financingUnavailable": "Bo‘lib to‘lash hisobi faqat tasdiqlangan qurilma narxi mavjud bo‘lganda ko‘rsatiladi.",
-    "keySpecifications": "Asosiy xususiyatlar",
-    "manufacturerSource": "Ishlab chiqaruvchi manbasi tekshirildi",
-    "specificationLabels": {
-      "display": "Ekran",
-      "camera": "Kamera",
-      "weight": "Vazn",
-      "battery": "Batareya",
-      "connectivity": "Ulanish"
-    },
-    "selectionSummary": "Smartfon tanlovingiz",
-    "phone": "Telefon",
-    "estimatedMonthly": "Taxminiy oylik to‘lov",
-    "noOrder": "Bu faqat tanlov xulosasi. Buyurtma berilmadi.",
-    "eyebrow": "SAmobile SMARTFONLARI",
-    "homeTitle": "Keyingi telefoningizni toping",
-    "homeIntro": "Qurilmalarni ko‘ring, moslamani tanlang va shaffof bo‘lib to‘lash hisobini tekshiring.",
-    "viewAll": "Barcha telefonlarni ko‘rish",
-    "title": "Smartfonlar",
-    "intro": "SAmobile bilan maslahatlashishdan oldin qurilma variantlari va taxminiy bo‘lib to‘lash xarajatlarini solishtiring.",
-    "browse": "Telefonlarni ko‘rish",
-    "compareIntro": "Boshlang‘ich narx, xotira va mavjud ranglarni solishtiring.",
-    "demoLabel": "ISHLAB CHIQISH DEMOSI",
-    "demoNotice": "Ko‘rsatilgan qurilmalar, narxlar va mavjudlik xayoliy ishlab chiqish ma’lumotlari bo‘lib, tasdiqlangan SAmobile takliflari emas.",
-    "from": "Boshlanishi",
-    "storage": "Xotira",
-    "color": "Rang",
-    "colors": "Ranglar",
-    "installment": "Bo‘lib to‘lash muddati",
-    "months": "{months} oy",
-    "devicePrice": "Qurilma narxi",
-    "estimate": "BO‘LIB TO‘LASH HISOBI",
-    "perMonth": "/ oy",
-    "annualInterest": "Yillik foiz",
-    "installmentTerm": "Bo‘lib to‘lash muddati",
-    "interestAmount": "Foiz summasi",
-    "totalPayment": "Jami to‘lov",
-    "disclaimer": "Yillik qat’iy {rate}% foiz stavkasi asosidagi taxminiy bo‘lib to‘lash summasi. Yakuniy shartlar maslahat vaqtida tasdiqlanadi.",
-    "inquiry": "Maslahat / xarid so‘rovi",
-    "selectionPreserved": "Tanlangan telefon, xotira, rang, muddat va hisob maslahat sahifasiga uzatiladi. Buyurtma yaratilmaydi.",
-    "viewPhone": "Telefonni ko‘rish",
-    "generalConsultation": "Smartfonlar haqida so‘rash",
-    "empty": "Ko‘rsatish uchun telefon yo‘q.",
-    "breadcrumb": "Navigatsiya yo‘li",
-    "home": "Bosh sahifa",
-    "placeholderImage": "Neytral ishlab chiqish rasmi · haqiqiy telefon modeli emas",
-    "imageAlt": {
-      "genericPhone": "Oddiy smartfonning neytral tasviri; haqiqiy model emas."
-    },
-    "colorNames": {
-      "graphite": "Grafit",
-      "silver": "Kumush",
-      "sage": "Shalfey",
-      "sand": "Qum"
-    }
   }
 }

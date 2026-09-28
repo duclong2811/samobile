@@ -7,6 +7,8 @@ import { readFile } from 'node:fs/promises';
 const { chromium } = await import(process.argv[2] ? pathToFileURL(process.argv[2]).href : 'playwright');
 const base = process.env.BASE_URL || 'http://127.0.0.1:3000';
 const key = 'samobile.language.v1';
+const campaignKey = 'samobile-campaign';
+const campaigns = ['basic', 'new-semester', 'chuseok', 'christmas'];
 const locales = ['en', 'ko', 'vi', 'zh', 'th', 'ne', 'uz'];
 function messagePaths(value, prefix = '') {
   if (value !== null && typeof value === 'object') return Object.entries(value).flatMap(([key, child]) => messagePaths(child, `${prefix}.${key}`)).sort();
@@ -123,6 +125,24 @@ try {
         return logo.height > word.height * 2 && Math.abs(word.bottom - logo.bottom - 8) <= 1 && word.left >= logo.right;
       }));
       assert.doesNotMatch(await page.locator('body').textContent(), /SAMOBILE|Samobile|SA Mobile|SA\uBAA8\uBC14\uC77C|KT\uBAA8\uBC14\uC77C/);
+      if (width === 1440 || width === 390) {
+        const messages = JSON.parse(await readFile(`messages/${locale}.json`, 'utf8'));
+        for (const campaign of campaigns) {
+          await page.locator('#campaign-select').selectOption(campaign);
+          assert.equal(await page.locator('.commerce-hero').getAttribute('data-campaign'), campaign);
+          assert.equal(await page.evaluate(key => localStorage.getItem(key), campaignKey), campaign);
+          if (campaign !== 'basic') {
+            assert((await page.locator('#hero-heading').textContent()).includes(messages.campaign.campaigns[campaign].title));
+          }
+          if (locale === 'en') await page.locator('.commerce-hero').screenshot({ path: `.next/campaign-${campaign}-${width}.png` });
+          const campaignMetrics = await page.evaluate(() => ({ width: innerWidth, scroll: document.documentElement.scrollWidth }));
+          assert(campaignMetrics.scroll <= campaignMetrics.width, `${locale} ${width} ${campaign} overflow`);
+        }
+        await page.reload();
+        await page.waitForFunction(() => document.querySelector('.commerce-hero')?.getAttribute('data-campaign') === 'christmas');
+        assert.equal(await page.locator('.commerce-hero').getAttribute('data-campaign'), 'christmas');
+        await page.locator('#campaign-select').selectOption('basic');
+      }
       const footerText = await page.locator('.footer-identity p').textContent();
       assert(footerText.includes('SAmobile') && footerText.includes('KT Corporation'));
       if (width <= 760) {
@@ -195,6 +215,8 @@ try {
   await bp.locator('dialog[open]').waitFor();
   await bp.locator('.language-option[lang="en"]').click();
   assert.equal(await bp.locator('dialog[open]').count(), 0);
+  await bp.locator('#campaign-select').selectOption('chuseok');
+  assert.equal(await bp.locator('.commerce-hero').getAttribute('data-campaign'), 'chuseok');
   assert.deepEqual(errors, []);
   console.log('PASS mobile dialog, plan shortcuts, consultation CTA, invalid locale, JS errors, blocked-storage fallback');
 } finally {

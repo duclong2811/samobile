@@ -153,6 +153,42 @@
     "note": "Lựa chọn được lưu trên thiết bị này. Bạn có thể đổi ngôn ngữ ở đầu trang bất cứ lúc nào.",
     "required": "Vui lòng chọn ngôn ngữ để tiếp tục."
   },
+  "campaign": {
+    "previewLabel": "Xem trước chiến dịch",
+    "previewAriaLabel": "Xem trước chiến dịch trên trang chủ",
+    "options": { "basic": "Cơ bản", "new-semester": "Học kỳ mới", "chuseok": "Chuseok", "christmas": "Giáng sinh" },
+    "campaigns": {
+      "new-semester": { "badge": "NEW SEMESTER", "title": "Cuộc sống mới tại Hàn Quốc.", "accent": "Kết nối ngay từ ngày đầu.", "description": "Bắt nhịp việc học, công việc và cuộc sống với dịch vụ di động, Internet gia đình dễ hiểu.", "strip": "Di động · Internet gia đình · Hỗ trợ đa ngôn ngữ", "primary": "Bắt đầu kết nối" },
+      "chuseok": { "badge": "HAPPY CHUSEOK", "title": "Dù xa nhà.", "accent": "Vẫn gần những người thân yêu.", "description": "Luôn kết nối với gia đình dù họ ở đâu trong một mùa Chuseok ấm áp, an lành.", "strip": "Di động · Internet gia đình · Hỗ trợ đa ngôn ngữ", "primary": "Khám phá lựa chọn kết nối" },
+      "christmas": { "badge": "MERRY CHRISTMAS", "title": "Giáng sinh ấm áp.", "accent": "Gần nhau qua từng kết nối.", "description": "Giữ người thân yêu luôn gần bên với dịch vụ di động và Internet gia đình cho cuộc sống tại Hàn Quốc.", "strip": "Di động · Internet gia đình · Hỗ trợ đa ngôn ngữ", "primary": "Khám phá lựa chọn kết nối" }
+    }
+  },
+  "phones": {
+    "imageUsageNote":"Ảnh tham khảo chính thức của nhà sản xuất · demo catalog nội bộ",
+    "filterLabel":"Lọc điện thoại theo thương hiệu", "all":"Tất cả", "resultCount":"{count} điện thoại", "priceStatus":"Giá SAmobile", "contactForPrice":"Liên hệ để biết giá", "catalogNotice":"Thông tin sản phẩm của nhà sản xuất đã được kiểm tra từ nguồn chính thức. Giá và tình trạng cung cấp của SAmobile chưa được cung cấp và cần tư vấn.", "priceRequiredTitle":"Cần xác nhận giá", "priceRequiredBody":"Giá SAmobile cho cấu hình này chưa được xác minh.", "financingUnavailable":"Ước tính trả góp chỉ hiển thị khi có giá thiết bị đã được xác minh.", "keySpecifications":"Thông số chính", "manufacturerSource":"Nguồn nhà sản xuất đã kiểm tra", "specificationLabels":{"display":"Màn hình","camera":"Camera","weight":"Trọng lượng","battery":"Pin","connectivity":"Kết nối"},
+    "selectionSummary": "Lựa chọn điện thoại của bạn", "phone": "Điện thoại", "estimatedMonthly": "Khoản trả hàng tháng ước tính", "noOrder": "Chỉ là bản tóm tắt lựa chọn. Chưa có đơn hàng nào được đặt.",
+    "eyebrow": "ĐIỆN THOẠI TẠI SAmobile", "homeTitle": "Tìm điện thoại tiếp theo của bạn", "homeIntro": "Khám phá thiết bị, chọn cấu hình và xem ước tính trả góp minh bạch.", "viewAll": "Xem tất cả điện thoại", "title": "Điện thoại thông minh", "intro": "So sánh cấu hình và chi phí trả góp ước tính trước khi tư vấn với SAmobile.", "browse": "Khám phá điện thoại", "compareIntro": "So sánh giá khởi điểm, dung lượng và màu sắc.", "demoLabel": "DEMO PHÁT TRIỂN", "demoNotice": "Thiết bị, giá và tình trạng hiển thị là dữ liệu giả lập để phát triển, không phải ưu đãi đã xác minh của SAmobile.", "from": "Từ", "storage": "Dung lượng", "color": "Màu sắc", "colors": "Số màu", "installment": "Kỳ hạn trả góp", "months": "{months} tháng", "devicePrice": "Giá thiết bị", "estimate": "ƯỚC TÍNH TRẢ GÓP", "perMonth": "/ tháng", "annualInterest": "Lãi suất năm", "installmentTerm": "Kỳ hạn trả góp", "interestAmount": "Tiền lãi", "totalPayment": "Tổng thanh toán", "disclaimer": "Khoản trả góp ước tính theo lãi suất cố định {rate}%/năm. Điều kiện thanh toán cuối cùng được xác nhận khi tư vấn.", "inquiry": "Tư vấn / hỏi mua", "selectionPreserved": "Điện thoại, dung lượng, màu, kỳ hạn và ước tính đã chọn sẽ được chuyển đến trang tư vấn. Không có đơn hàng nào được tạo.", "viewPhone": "Xem điện thoại", "generalConsultation": "Hỏi về điện thoại", "empty": "Hiện không có điện thoại để hiển thị.", "breadcrumb": "Đường dẫn", "home": "Trang chủ", "placeholderImage": "Ảnh phát triển trung tính · không phải mẫu điện thoại thật", "imageAlt": { "genericPhone": "Minh họa trung tính của điện thoại thông minh chung, không phải mẫu thật." }, "colorNames": { "graphite": "Than chì", "silver": "Bạc", "sage": "Xanh xô thơm", "sand": "Cát" }
+  },
+  "luckyWheel": {
+    "eyebrow": "VÒNG QUAY MAY MẮN SAmobile",
+    "homeTitle": "Thử vận may của bạn",
+    "homeIntro": "Quay vòng quay demo để có cơ hội mở ra một trong ba phần thưởng mẫu.",
+    "homeAction": "Mở vòng quay may mắn",
+    "title": "Vòng quay may mắn",
+    "intro": "Một lượt quay, mười ô. Hãy xem vòng quay dừng ở đâu trong bản trình diễn frontend này.",
+    "prizeTitle": "Phần thưởng trên vòng quay",
+    "prizes": ["Giảm 10%", "Giảm ₩10.000", "Giảm ₩50.000"],
+    "demoLabel": "Demo frontend.",
+    "demoNotice": "Kết quả được tạo trên trình duyệt và không có giá trị nhận thưởng. Điều kiện, giới hạn lượt, xác minh và phát thưởng cần backend trong tương lai.",
+    "spin": "Quay ngay",
+    "spinning": "Đang quay…",
+    "spinAgain": "Quay lại",
+    "winnerTitle": "Vòng quay đã dừng tại",
+    "winnerBody": "Chỉ là kết quả demo — chưa có phần thưởng nào được phát.",
+    "noPrizeTitle": "Chưa trúng lần này",
+    "noPrizeBody": "Đây là bản demo, bạn có thể quay lại.",
+    "rewards": { "discount10Percent": "GIẢM 10%", "discount10000Krw": "GIẢM ₩10.000", "discount50000Krw": "GIẢM ₩50.000", "noPrize": "MẤT LƯỢT" }
+  },
   "product": {
     "plan": "Gói",
     "perMonth": "/ tháng",
@@ -167,71 +203,5 @@
     "messages": "tin nhắn",
     "contract": "Hợp đồng",
     "years": "năm"
-  },
-  "phones": {
-    "imageUsageNote": "Ảnh tham khảo chính thức của nhà sản xuất · demo catalog nội bộ",
-    "filterLabel": "Lọc điện thoại theo thương hiệu",
-    "all": "Tất cả",
-    "resultCount": "{count} điện thoại",
-    "priceStatus": "Giá SAmobile",
-    "contactForPrice": "Liên hệ để biết giá",
-    "catalogNotice": "Thông tin sản phẩm của nhà sản xuất đã được kiểm tra từ nguồn chính thức. Giá và tình trạng cung cấp của SAmobile chưa được cung cấp và cần tư vấn.",
-    "priceRequiredTitle": "Cần xác nhận giá",
-    "priceRequiredBody": "Giá SAmobile cho cấu hình này chưa được xác minh.",
-    "financingUnavailable": "Ước tính trả góp chỉ hiển thị khi có giá thiết bị đã được xác minh.",
-    "keySpecifications": "Thông số chính",
-    "manufacturerSource": "Nguồn nhà sản xuất đã kiểm tra",
-    "specificationLabels": {
-      "display": "Màn hình",
-      "camera": "Camera",
-      "weight": "Trọng lượng",
-      "battery": "Pin",
-      "connectivity": "Kết nối"
-    },
-    "selectionSummary": "Lựa chọn điện thoại của bạn",
-    "phone": "Điện thoại",
-    "estimatedMonthly": "Khoản trả hàng tháng ước tính",
-    "noOrder": "Chỉ là bản tóm tắt lựa chọn. Chưa có đơn hàng nào được đặt.",
-    "eyebrow": "ĐIỆN THOẠI TẠI SAmobile",
-    "homeTitle": "Tìm điện thoại tiếp theo của bạn",
-    "homeIntro": "Khám phá thiết bị, chọn cấu hình và xem ước tính trả góp minh bạch.",
-    "viewAll": "Xem tất cả điện thoại",
-    "title": "Điện thoại thông minh",
-    "intro": "So sánh cấu hình và chi phí trả góp ước tính trước khi tư vấn với SAmobile.",
-    "browse": "Khám phá điện thoại",
-    "compareIntro": "So sánh giá khởi điểm, dung lượng và màu sắc.",
-    "demoLabel": "DEMO PHÁT TRIỂN",
-    "demoNotice": "Thiết bị, giá và tình trạng hiển thị là dữ liệu giả lập để phát triển, không phải ưu đãi đã xác minh của SAmobile.",
-    "from": "Từ",
-    "storage": "Dung lượng",
-    "color": "Màu sắc",
-    "colors": "Số màu",
-    "installment": "Kỳ hạn trả góp",
-    "months": "{months} tháng",
-    "devicePrice": "Giá thiết bị",
-    "estimate": "ƯỚC TÍNH TRẢ GÓP",
-    "perMonth": "/ tháng",
-    "annualInterest": "Lãi suất năm",
-    "installmentTerm": "Kỳ hạn trả góp",
-    "interestAmount": "Tiền lãi",
-    "totalPayment": "Tổng thanh toán",
-    "disclaimer": "Khoản trả góp ước tính theo lãi suất cố định {rate}%/năm. Điều kiện thanh toán cuối cùng được xác nhận khi tư vấn.",
-    "inquiry": "Tư vấn / hỏi mua",
-    "selectionPreserved": "Điện thoại, dung lượng, màu, kỳ hạn và ước tính đã chọn sẽ được chuyển đến trang tư vấn. Không có đơn hàng nào được tạo.",
-    "viewPhone": "Xem điện thoại",
-    "generalConsultation": "Hỏi về điện thoại",
-    "empty": "Hiện không có điện thoại để hiển thị.",
-    "breadcrumb": "Đường dẫn",
-    "home": "Trang chủ",
-    "placeholderImage": "Ảnh phát triển trung tính · không phải mẫu điện thoại thật",
-    "imageAlt": {
-      "genericPhone": "Minh họa trung tính của điện thoại thông minh chung, không phải mẫu thật."
-    },
-    "colorNames": {
-      "graphite": "Than chì",
-      "silver": "Bạc",
-      "sage": "Xanh xô thơm",
-      "sand": "Cát"
-    }
   }
 }

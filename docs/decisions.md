@@ -22,6 +22,12 @@ Một cây `app/[locale]`, cấu hình locale trung tâm và dữ liệu trong r
 - Dữ liệu và ảnh hiện tại chỉ là development fixture rõ ràng; cần thay bằng dữ liệu/asset được SAmobile phê duyệt trước phát hành.
 - UI nhận `Phone` qua repository boundary để nguồn cục bộ có thể được thay bằng Payload CMS sau này.
 
+## Đã xác nhận — 2026-09-28
+
+- Mini game vòng quay được trình diễn bằng một trang riêng, dẫn từ một block gọn trên homepage.
+- Bản demo frontend có 10 ô bằng nhau: giảm 10%, giảm ₩10.000, giảm ₩50.000 và 7 ô mất lượt.
+- Kết quả demo không có giá trị nhận thưởng. Backend quyết định kết quả, giới hạn lượt, xác minh và phát thưởng là hạng mục bắt buộc trước khi ra mắt thật.
+
 ## Còn mở
 
 | Chủ đề | Cần xác nhận |
