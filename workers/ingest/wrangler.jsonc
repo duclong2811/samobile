@@ -7,7 +7,7 @@
   "triggers": { "crons": ["0 * * * *"] },
   // Same database as the website. Paste the same id as in the root wrangler.jsonc.
   "d1_databases": [
-    { "binding": "DB", "database_name": "samobile", "database_id": "REPLACE_WITH_D1_DATABASE_ID", "migrations_dir": "../../migrations" }
+    { "binding": "DB", "database_name": "samobile", "database_id": "4352f184-9ea0-480f-9eb6-46b7fae17fd9", "migrations_dir": "../../migrations" }
   ],
   "vars": {
     "DEEPSEEK_BASE_URL": "https://api.deepseek.com",

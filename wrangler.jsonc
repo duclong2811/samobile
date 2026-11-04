@@ -18,7 +18,7 @@
     {
       "binding": "DB",
       "database_name": "samobile",
-      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "database_id": "4352f184-9ea0-480f-9eb6-46b7fae17fd9",
       "migrations_dir": "migrations"
     }
   ],
