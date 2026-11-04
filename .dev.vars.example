@@ -1,0 +1,3 @@
+# Copy to .dev.vars (git-ignored) for local development only.
+# Grants admin access on localhost. Ignored automatically once CF_ACCESS_* are configured.
+ADMIN_DEV_EMAIL=you@example.com
