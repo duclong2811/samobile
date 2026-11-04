@@ -35,6 +35,7 @@ Một cây `app/[locale]`, cấu hình locale trung tâm và dữ liệu trong r
 - Nguồn tin: báo chí, mạng xã hội nếu khả thi. Đề xuất AI: giai đoạn đầu chỉ báo/cổng chính phủ vì mạng xã hội hạn chế bởi điều khoản và API tính phí; chưa chốt.
 - Xuất bản tự động hoàn toàn. Đề xuất AI (chưa chủ dự án xác nhận): chuyên mục visa/lao động/thuế/y tế giữ chờ duyệt; bài chỉ gồm tóm tắt + nguồn + link gốc.
 - Ngôn ngữ dịch tự động trước: Việt, Nepal, Thái, Uzbekistan.
+- Dịch bằng DeepSeek (chủ dự án xác nhận). Quét RSS trong worker riêng, mặc định tắt; nhóm nhạy cảm mặc định giữ chờ duyệt (đề xuất AI, chủ dự án đổi được trong `/admin/ingest`).
 - Hệ quản trị nội dung tự viết trên Cloudflare D1 + Cloudflare Access, không phụ thuộc dịch vụ CMS bên thứ ba. Chi tiết: [cms-admin.md](cms-admin.md).
 
 ## Còn mở

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 const items = [
   { href: "/admin", label: "Tổng quan", exact: true },
   { href: "/admin/articles", label: "Bài viết", exact: false },
+  { href: "/admin/ingest", label: "Quét tin tự động", exact: false },
 ] as const;
 
 export function AdminNav() {
@@ -15,6 +16,5 @@ export function AdminNav() {
       return <Link key={item.href} href={item.href} aria-current={active ? "page" : undefined}>{item.label}</Link>;
     })}
     <span className="admin-nav-soon" aria-disabled="true">Sản phẩm <small>sắp có</small></span>
-    <span className="admin-nav-soon" aria-disabled="true">Quét tin tự động <small>sắp có</small></span>
   </nav>;
 }

@@ -1,11 +1,9 @@
 import { locales, type Locale } from "@/lib/i18n/config";
+import { articleCategories, type ArticleCategory } from "@/lib/news/categories";
+export { articleCategories, sensitiveCategories, type ArticleCategory } from "@/lib/news/categories";
 
 export const articleStatuses = ["draft", "published", "hidden"] as const;
 export type ArticleStatus = (typeof articleStatuses)[number];
-export const articleCategories = ["general", "visa", "labor", "tax", "health", "life"] as const;
-export type ArticleCategory = (typeof articleCategories)[number];
-/** Categories where a wrong translation can harm readers; auto-publishing must hold these for review. */
-export const sensitiveCategories: readonly ArticleCategory[] = ["visa", "labor", "tax", "health"];
 
 export const limits = { title: 200, summary: 600, body: 20000, slug: 80, sourceName: 120, sourceUrl: 500 } as const;
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;

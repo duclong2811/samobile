@@ -1,6 +1,6 @@
 # Hệ quản trị nội dung và tin tức
 
-Trạng thái: giai đoạn 1 đã triển khai (trang quản trị + tin tức công khai). Quét tin và dịch tự động là giai đoạn 2, chưa làm.
+Trạng thái: giai đoạn 1 (trang quản trị + tin tức công khai) đã triển khai. Giai đoạn 2 (quét tin và dịch bằng DeepSeek) đã viết và kiểm thử với máy chủ giả, chưa chạy với DeepSeek thật.
 
 ## Phạm vi
 
@@ -44,13 +44,41 @@ Lưu ý: Access trên `*.workers.dev` áp dụng cho cả Worker (khóa luôn we
 
 Phát triển cục bộ: `cp .dev.vars.example .dev.vars`, `npm run db:migrate:local`, `npm run dev:vinext`, mở `http://localhost:3001/admin`. `npm run dev` (Next thường) vẫn chạy trang cũ nhưng không có D1, nên `/admin` và `/news` cần `dev:vinext`.
 
-## Giai đoạn 2 (chưa làm, đã chốt hướng)
+## Giai đoạn 2: quét tin và dịch tự động (đã viết, chưa chạy với DeepSeek thật)
 
-Cron Trigger (Workers) lấy tin từ báo/cổng chính phủ qua RSS → loại bài trùng → AI lọc bài liên quan người nước ngoài → tóm tắt + dịch Việt, Nepal, Thái, Uzbekistan → ghi vào D1 với `origin='auto'`, `machine_translated=1` → tự xuất bản, kèm công tắc tắt khẩn cấp và nút gỡ bài. Cần Queues để chia nhỏ việc; khóa API lưu bằng `wrangler secret`. Chuyên mục nhạy cảm đề xuất giữ ở `draft` chờ duyệt; xem `decisions.md`.
+Worker riêng `samobile-ingest` (`workers/ingest/`), chạy mỗi giờ bằng Cron Trigger. Tách khỏi website để khóa DeepSeek chỉ nằm ở worker này.
+
+Luồng: đọc RSS của các nguồn đã bật → bỏ bài đã xem (`ingest_items`) → bài có mô tả dưới 40 ký tự thì bỏ qua, không gọi AI → một lần gọi DeepSeek cho mỗi bài (chọn lọc + chuyên mục + tóm tắt + dịch vi/ne/th/uz, trả về JSON) → kiểm tra JSON nghiêm ngặt → ghi bài (`origin='auto'`, `machine_translated=1`, kèm tên nguồn và link gốc) trong một giao dịch với sổ cái và nhật ký.
+
+| Chi tiết | Giá trị |
+| --- | --- |
+| Dữ liệu lấy từ nguồn | Chỉ tiêu đề và mô tả trong RSS; không tải toàn văn bài |
+| Giới hạn | `MAX_ITEMS_PER_RUN` (mặc định 6) bài mỗi lần chạy; bài lỗi thử lại tối đa 3 lần |
+| Công tắc | `/admin/ingest`: bật/tắt quét (mặc định **tắt**); giữ nhóm nhạy cảm chờ duyệt (mặc định **giữ**) |
+| Dừng khẩn | Sai khóa API hoặc hết tiền (HTTP 401/402/403) thì dừng cả lượt chạy ngay |
+| Từ chối chạy | Thiếu `DEEPSEEK_API_KEY`, để trống `DEEPSEEK_MODEL`, hoặc URL không phải https |
+| Quản lý | `/admin/ingest`: thêm/tắt/xóa nguồn RSS, xem nhật ký quét và lý do bỏ qua/lỗi |
+
+### Thiết lập để chạy thật
+
+1. Áp dụng migration mới lên DB live: `npm run db:migrate:remote` (có `0002_ingest.sql`).
+2. Sửa `workers/ingest/wrangler.jsonc`: dán cùng `database_id` với file gốc; điền `DEEPSEEK_MODEL` đúng tên model trong tài khoản DeepSeek của bạn (để trống có chủ đích: tên model đổi theo thời gian và mình không xác minh được từ môi trường phát triển). Kiểm tra lại `DEEPSEEK_BASE_URL` theo tài liệu DeepSeek.
+3. Đặt hai secret (không dán khóa vào chat hay vào file): `npx wrangler secret put DEEPSEEK_API_KEY --config workers/ingest/wrangler.jsonc` và `npx wrangler secret put INGEST_RUN_TOKEN --config workers/ingest/wrangler.jsonc` (chuỗi ngẫu nhiên từ 32 ký tự).
+4. `npm run deploy:ingest`.
+5. Vào `/admin/ingest`, thêm nguồn RSS, rồi bật công tắc.
+6. Thử một lần: `POST https://samobile-ingest.<tài khoản>.workers.dev/run` với header `Authorization: Bearer <INGEST_RUN_TOKEN>`; xem kết quả trong nhật ký. Xong có thể đặt `"workers_dev": false` để bỏ endpoint này (cron vẫn chạy).
+
+Chạy thử cục bộ: tạo `workers/ingest/.dev.vars` (`DEEPSEEK_API_KEY=...`, `INGEST_RUN_TOKEN=...`), `npm run db:migrate:local`, `npm run dev:ingest`. File `.dev.vars` bị git bỏ qua.
+
+### Đã kiểm chứng và chưa kiểm chứng
+
+- Đã kiểm chứng bằng máy chủ giả (RSS + API giống DeepSeek) chạy với worker thật trên workerd: bài liên quan, không liên quan, quá ngắn, JSON hỏng, thiếu ngôn ngữ, slug độc, bài giữ lại chờ duyệt, thử lại tối đa 3 lần, không tạo bài trùng, công tắc tắt, sai khóa thì dừng, thiếu tên model thì từ chối. `npm run test:ingest` (21 ca) chạy phần đọc RSS, kiểm tra kết quả AI và gọi API.
+- **Chưa kiểm chứng**: gọi DeepSeek thật (môi trường phát triển không truy cập được tên miền DeepSeek và không có khóa); tên model và `response_format` hiện hành của DeepSeek; chất lượng bản dịch ne/th/uz; hành vi trên bản Cloudflare live (giới hạn subrequest của gói Workers đang dùng). Hãy chạy thử với 1-2 nguồn và đọc kỹ các bài đầu tiên trước khi để chạy tự động.
+- Giới hạn đã biết: chất lượng tóm tắt phụ thuộc đoạn mô tả trong RSS (thường ngắn); chưa gộp bài trùng nội dung giữa các báo; AI có thể phân loại sai chuyên mục (sai sang nhóm không nhạy cảm thì bài tự đăng).
 
 ## Việc còn mở
 
 - Vị trí liên kết Tin tức trên header/footer và thiết kế trang danh sách (đang dùng khung trang Điện thoại).
-- Danh sách nguồn tin cụ thể, điều khoản sử dụng từng nguồn (bản quyền), và nguồn mạng xã hội hợp lệ.
+- Danh sách nguồn RSS cụ thể và điều khoản sử dụng từng nguồn (bản quyền). Mạng xã hội chưa hỗ trợ.
 - Người bản ngữ rà soát chuỗi giao diện `news` ở ne/uz/th (do AI soạn, chưa có người duyệt).
 - Quản lý sản phẩm, ưu đãi, vé máy bay trong trang quản trị: chưa làm.

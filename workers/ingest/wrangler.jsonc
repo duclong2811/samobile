@@ -1,0 +1,21 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "samobile-ingest",
+  "main": "index.ts",
+  "compatibility_date": "2026-09-20",
+  // Runs hourly. Items per run are capped by MAX_ITEMS_PER_RUN to bound cost and subrequests.
+  "triggers": { "crons": ["0 * * * *"] },
+  // Same database as the website. Paste the same id as in the root wrangler.jsonc.
+  "d1_databases": [
+    { "binding": "DB", "database_name": "samobile", "database_id": "REPLACE_WITH_D1_DATABASE_ID", "migrations_dir": "../../migrations" }
+  ],
+  "vars": {
+    "DEEPSEEK_BASE_URL": "https://api.deepseek.com",
+    // Required. Copy the exact model name from your DeepSeek account/docs. Left empty on purpose: ingestion refuses to run without it.
+    "DEEPSEEK_MODEL": "",
+    "MAX_ITEMS_PER_RUN": "6",
+    "TARGET_LOCALES": "vi,ne,th,uz"
+  }
+  // Secrets (never in this file):  npx wrangler secret put DEEPSEEK_API_KEY --config workers/ingest/wrangler.jsonc
+  //                                 npx wrangler secret put INGEST_RUN_TOKEN  --config workers/ingest/wrangler.jsonc
+}

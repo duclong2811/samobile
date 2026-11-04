@@ -8,7 +8,8 @@ export const categoryLabels: Record<ArticleCategory, string> = {
 export const originLabels = { manual: "Thủ công", auto: "Tự động" } as const;
 /** Editor tab order: launch languages first. */
 export const editorLocaleOrder = ["vi", "ne", "th", "uz", "en", "ko", "zh"] as const;
-export const actionLabels: Record<string, string> = { create: "Tạo bài", update: "Sửa bài", status: "Đổi trạng thái", delete: "Xóa bài" };
+export const actionLabels: Record<string, string> = { create: "Tạo mới", update: "Sửa", status: "Đổi trạng thái", delete: "Xóa", setting: "Đổi cài đặt" };
+export const ingestStatusLabels = { published: "Đã đăng", held: "Chờ duyệt", skipped: "Bỏ qua", failed: "Lỗi" } as const;
 
 export function formatDate(iso: string | null): string {
   if (!iso) return "—";

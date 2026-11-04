@@ -23,7 +23,7 @@ Chủ dự án đã duyệt chỉnh homepage hiện tại, thương hiệu, bả
 | UI/bản dịch | Responsive, ko/en/vi/zh/th/ne/uz, nội dung dài, keyboard/focus, trạng thái và visual QA |
 | Logic rủi ro | Test hành vi có ý nghĩa khi có bộ kiểm thử phù hợp |
 
-Lệnh hiện có: `npm run dev`, `npm run lint`, `npm run build`, `npm run start`, `npm run dev:vinext`, `npm run db:migrate:local`, `npm run test:admin-access`, `npm run test:phones`, `npm run test:lucky-wheel`. Chưa có script `test` tổng hoặc `typecheck`. Trang quản trị và tin tức cần D1: chạy bằng `dev:vinext`, xem [cms-admin.md](cms-admin.md). Trên PowerShell chặn `npm.ps1`, dùng `npm.cmd`.
+Lệnh hiện có: `npm run dev`, `npm run lint`, `npm run build`, `npm run start`, `npm run dev:vinext`, `npm run db:migrate:local`, `npm run test:admin-access`, `npm run test:ingest`, `npm run dev:ingest`, `npm run deploy:ingest`, `npm run test:phones`, `npm run test:lucky-wheel`. Chưa có script `test` tổng hoặc `typecheck`. Trang quản trị và tin tức cần D1: chạy bằng `dev:vinext`, xem [cms-admin.md](cms-admin.md). Trên PowerShell chặn `npm.ps1`, dùng `npm.cmd`.
 
 Không chạy dev/build hoặc thêm framework test cho thay đổi chỉ có tài liệu. Khi hoàn tất, báo cáo thay đổi, kiểm tra đã chạy và giới hạn; không tuyên bố đã test hoặc visual QA nếu chưa thực hiện. Duyệt tài liệu không đồng nghĩa cho phép triển khai/xuất bản.
 
