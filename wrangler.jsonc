@@ -10,5 +10,23 @@
     "directory": "dist/client",
     "not_found_handling": "none",
     "binding": "ASSETS"
+  },
+  // Content database (articles, translations, audit log). Create it once with:
+  //   npx wrangler d1 create samobile
+  // then paste the returned id below. See docs/cms-admin.md.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "samobile",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
+  // Cloudflare Access settings for /admin (not secrets). Leave empty until Access is created;
+  // while empty the admin area stays locked for everyone except localhost with .dev.vars.
+  "vars": {
+    "CF_ACCESS_TEAM_DOMAIN": "",
+    "CF_ACCESS_AUD": "",
+    "ADMIN_EMAILS": ""
   }
 }

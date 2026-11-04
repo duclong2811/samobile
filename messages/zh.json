@@ -203,5 +203,26 @@
     "messages": "条",
     "contract": "合约",
     "years": "年"
+  },
+  "news": {
+    "title": "新闻",
+    "intro": "SAmobile 为在韩外国人整理并翻译的新闻与实用信息。",
+    "empty": "暂无文章。",
+    "readOriginal": "阅读原文",
+    "source": "来源",
+    "publishedOn": "发布于",
+    "back": "← 全部新闻",
+    "breadcrumb": "路径",
+    "home": "首页",
+    "machineNotice": "本文为机器翻译，可能存在错误。请在采取行动前核对原始来源。",
+    "disclaimer": "仅为一般信息，不构成法律、税务或医疗建议。",
+    "categories": {
+      "general": "综合",
+      "visa": "签证与居留",
+      "labor": "劳动",
+      "tax": "税务",
+      "health": "医疗与保险",
+      "life": "生活"
+    }
   }
 }

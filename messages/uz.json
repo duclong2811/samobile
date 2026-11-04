@@ -203,5 +203,26 @@
     "messages": "ta xabar",
     "contract": "Shartnoma",
     "years": "yil"
+  },
+  "news": {
+    "title": "Yangiliklar",
+    "intro": "Koreyada yashayotgan xorijliklar uchun yangiliklar va foydali ma'lumotlar. SAmobile tomonidan qisqartirilgan va tarjima qilingan.",
+    "empty": "Hozircha maqolalar yo'q.",
+    "readOriginal": "Asl maqolani o'qish",
+    "source": "Manba",
+    "publishedOn": "Nashr sanasi",
+    "back": "← Barcha yangiliklar",
+    "breadcrumb": "Yo'l",
+    "home": "Bosh sahifa",
+    "machineNotice": "Bu maqola avtomatik tarjima qilingan va xatolar bo'lishi mumkin. Harakat qilishdan oldin asl manbani tekshiring.",
+    "disclaimer": "Bu faqat umumiy ma'lumot — huquqiy, soliq yoki tibbiy maslahat emas.",
+    "categories": {
+      "general": "Umumiy",
+      "visa": "Viza va yashash",
+      "labor": "Mehnat",
+      "tax": "Soliq",
+      "health": "Sog'liq va sug'urta",
+      "life": "Kundalik hayot"
+    }
   }
 }

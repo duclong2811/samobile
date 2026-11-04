@@ -37,8 +37,8 @@ Deploy command dùng output của build trước đó. Khi chạy độc lập, 
 ## Cấu hình
 
 - `vite.config.ts`: vinext và Cloudflare Vite plugin, RSC environment với SSR child environment.
-- `wrangler.jsonc`: entry `vinext/server/fetch-handler`, `nodejs_compat`, binding `ASSETS` cho tài nguyên tĩnh. Không thêm KV, R2, database, secret, custom domain hoặc cache service.
-- Không cần environment variable hoặc secret của ứng dụng hiện tại.
+- `wrangler.jsonc`: entry `vinext/server/fetch-handler`, `nodejs_compat`, binding `ASSETS` cho tài nguyên tĩnh. Từ 2026-11-04 có thêm binding D1 `DB` và biến `CF_ACCESS_*`/`ADMIN_EMAILS` cho trang quản trị; xem [cms-admin.md](cms-admin.md) (cần tạo D1 và điền `database_id` trước khi deploy). Không thêm KV, R2, secret, custom domain hoặc cache service khi chưa có yêu cầu.
+- Trang công khai cũ không cần secret. Trang quản trị cần `CF_ACCESS_TEAM_DOMAIN` và `CF_ACCESS_AUD` (không phải bí mật, đặt trong `vars`).
 - `dist/`, `.vinext/`, `.wrangler/`, `.dev.vars*` và `.env*` không được commit. Commit cấu hình nguồn và `package-lock.json`; build sinh `dist/server/wrangler.json`.
 - Source UI, routes, bản dịch và dữ liệu sản phẩm không thay đổi. Next.js vẫn tối ưu ảnh theo cấu hình cũ. Với Workers, vinext phục vụ ảnh gốc khi chưa cấu hình Cloudflare Images; không thay đổi ảnh nguồn hay component. Tối ưu ảnh trên edge chưa bật vì cần cấu hình dịch vụ riêng.
 

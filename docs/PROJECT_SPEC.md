@@ -23,6 +23,10 @@ Luồng dự kiến: chọn ngôn ngữ → tìm hiểu dịch vụ → so sánh
 
 Chưa có dữ liệu gói cước thực tế được xác minh. Giá, ưu đãi, thời hạn hợp đồng, giấy tờ và eligibility đều **placeholder/TBD**; không phải báo giá hay cam kết.
 
+## Định hướng mở rộng (2026-11-04)
+
+Ngoài bán hàng, website sẽ có mục Tin tức cho người nước ngoài tại Hàn Quốc, quản lý qua trang quản trị `/admin`. Giai đoạn 1 (quản trị + trang tin) đã triển khai; quét và dịch tự động là giai đoạn 2. Xem [cms-admin.md](cms-admin.md) và [decisions.md](decisions.md). Vé máy bay chỉ là hướng dự kiến, chưa có đặc tả.
+
 ## Ngôn ngữ
 
 - Đã triển khai nội dung: Korean (`ko`), English (`en`), Vietnamese (`vi`), Simplified Chinese (`zh`), Thai (`th`), Nepali (`ne`), Uzbek (`uz`).

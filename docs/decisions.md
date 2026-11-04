@@ -29,6 +29,14 @@ Một cây `app/[locale]`, cấu hình locale trung tâm và dữ liệu trong r
 - Kết quả demo không có giá trị nhận thưởng. Backend quyết định kết quả, giới hạn lượt, xác minh và phát thưởng là hạng mục bắt buộc trước khi ra mắt thật.
 - Đã triển khai bản hiện tại lên Cloudflare Workers tại https://samobile.duclong-reg.workers.dev; custom domain vẫn còn mở.
 
+## Đã xác nhận — 2026-11-04
+
+- Định hướng mới: website không chỉ bán hàng (SIM, gói cước, Internet; sau này có thể vé máy bay) mà còn có mục tin tức cho người nước ngoài tại Hàn Quốc: quét nguồn tin, dịch, đăng tự động.
+- Nguồn tin: báo chí, mạng xã hội nếu khả thi. Đề xuất AI: giai đoạn đầu chỉ báo/cổng chính phủ vì mạng xã hội hạn chế bởi điều khoản và API tính phí; chưa chốt.
+- Xuất bản tự động hoàn toàn. Đề xuất AI (chưa chủ dự án xác nhận): chuyên mục visa/lao động/thuế/y tế giữ chờ duyệt; bài chỉ gồm tóm tắt + nguồn + link gốc.
+- Ngôn ngữ dịch tự động trước: Việt, Nepal, Thái, Uzbekistan.
+- Hệ quản trị nội dung tự viết trên Cloudflare D1 + Cloudflare Access, không phụ thuộc dịch vụ CMS bên thứ ba. Chi tiết: [cms-admin.md](cms-admin.md).
+
 ## Còn mở
 
 | Chủ đề | Cần xác nhận |
@@ -41,7 +49,8 @@ Một cây `app/[locale]`, cấu hình locale trung tâm và dữ liệu trong r
 | Cấu trúc trang | SIM/eSIM có trang riêng, slug còn lại, phạm vi phát hành đầu tiên |
 | Đo lường | Định nghĩa inquiry chất lượng, KPI, analytics và đồng ý nếu cần |
 | Pháp lý/dữ liệu | Thông tin pháp nhân, quyền riêng tư, đồng ý, nơi lưu và thời hạn lưu dữ liệu |
-| Hạ tầng | Domain, hosting, backend/CMS nếu cần, thư viện i18n |
+| Hạ tầng | Domain (cần để Access chỉ khóa `/admin`), thư viện i18n |
+| Tin tức | Nguồn cụ thể, bản quyền từng nguồn, chuyên mục nhạy cảm có tự đăng không, vị trí liên kết trên menu |
 | Thiết kế chi tiết | Token, bố cục, so sánh sản phẩm và CTA |
 
 Chỉ chuyển sang đã xác nhận khi có quyết định của chủ dự án hoặc bằng chứng phù hợp. Ghi ngày và lý do; không coi đề xuất AI là yêu cầu đã duyệt.

@@ -203,5 +203,26 @@
     "messages": "tin nhắn",
     "contract": "Hợp đồng",
     "years": "năm"
+  },
+  "news": {
+    "title": "Tin tức",
+    "intro": "Tin tức và thông tin thiết thực cho người nước ngoài sống tại Hàn Quốc, do SAmobile tóm tắt và dịch.",
+    "empty": "Chưa có bài viết nào.",
+    "readOriginal": "Đọc bài gốc",
+    "source": "Nguồn",
+    "publishedOn": "Đăng ngày",
+    "back": "← Tất cả tin tức",
+    "breadcrumb": "Đường dẫn",
+    "home": "Trang chủ",
+    "machineNotice": "Bài viết này được dịch tự động và có thể có sai sót. Hãy kiểm tra nguồn gốc trước khi làm theo.",
+    "disclaimer": "Chỉ là thông tin chung, không phải tư vấn pháp lý, thuế hay y tế.",
+    "categories": {
+      "general": "Tin chung",
+      "visa": "Visa & cư trú",
+      "labor": "Lao động",
+      "tax": "Thuế",
+      "health": "Y tế & bảo hiểm",
+      "life": "Đời sống"
+    }
   }
 }

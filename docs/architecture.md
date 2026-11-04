@@ -40,6 +40,10 @@ Tên file, JSON/TypeScript và thư viện i18n: TBD. Có thể bắt đầu v�
 
 Kênh tư vấn, backend biểu mẫu, lưu dữ liệu, chống spam, analytics, hosting và domain đều TBD. Không triển khai tích hợp hoặc cài dependency trong giai đoạn này. Xem [decisions.md](decisions.md).
 
+## News và quản trị
+
+Mục tin tức và trang `/admin` dùng Cloudflare D1; xem [cms-admin.md](cms-admin.md). Đây là phần đầu tiên của ứng dụng có backend và cần runtime Workers (`dev:vinext`).
+
 ## Campaign System
 
 Homepage dùng một hero cấu hình chung, không nhân bản trang hoặc dữ liệu sản phẩm. `content/campaigns.ts` định nghĩa các ID ổn định `basic`, `new-semester`, `chuseok`, `christmas` và khóa lưu lựa chọn. Copy khách hàng nằm trong mục `campaign` của bảy file `messages/*.json`; xử lý tương tác nằm riêng tại `components/campaign-hero.tsx`; treatment hình ảnh nhẹ nằm trong `app/globals.css`.

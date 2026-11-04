@@ -203,5 +203,26 @@
     "messages": "messages",
     "contract": "Contract",
     "years": "years"
+  },
+  "news": {
+    "title": "News",
+    "intro": "News and practical information for foreigners living in Korea, summarized and translated by SAmobile.",
+    "empty": "No articles yet.",
+    "readOriginal": "Read the original article",
+    "source": "Source",
+    "publishedOn": "Published",
+    "back": "← All news",
+    "breadcrumb": "Breadcrumb",
+    "home": "Home",
+    "machineNotice": "This article was machine-translated and may contain errors. Please check the original source before acting on it.",
+    "disclaimer": "General information only — not legal, tax or medical advice.",
+    "categories": {
+      "general": "General",
+      "visa": "Visa & residency",
+      "labor": "Labor",
+      "tax": "Tax",
+      "health": "Health & insurance",
+      "life": "Daily life"
+    }
   }
 }
